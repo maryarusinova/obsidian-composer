@@ -586,7 +586,7 @@ body {
 	--background-primary: #1B363D;
 	--background-primary-alt: #313D40;
 	--background-secondary: #38464B;
-	--background-secondary-alt: #8DA6A6;
+	--background-secondary-alt: #38464B;
 
 	--background-gradient: linear-gradient(
 		155deg,
@@ -595,14 +595,15 @@ body {
 		#38464B
 	);
 
-	--background-modifier-border: #8DA6A6;
+	--background-modifier-border: #313D40;
+	--background-modifier-hover: #313D40;
 
 	--color-base-00: #1B363D;
 	--color-base-05: #313D40;
 	--color-base-10: #38464B;
-	--color-base-20: #8DA6A6;
-	--color-base-25: #8DA6A6;
-	--color-base-30: #8DA6A6;
+	--color-base-20: #38464B;
+	--color-base-25: #38464B;
+	--color-base-30: #38464B;
 	--color-base-35: #F2C6B6;
 	--color-base-40: #F2A285;
 	--color-base-50: #F29472;
