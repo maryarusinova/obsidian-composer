@@ -8,19 +8,19 @@ settings:
       description: Choose a color scheme for the theme
       type: class-select
       allowEmpty: false
-      default: may4th--Scheme-light
+      default: may4th--PrequelsScheme-light
       options:
-          - label: The Light Side
-            value: may4th--Scheme-light
+          - label: Prequels
+            value: may4th--PrequelsScheme-light
     - id: theme-variant-dark
       title: Color Scheme
       description: Choose a color scheme for the theme
       type: class-select
       allowEmpty: false
-      default: may4th--Scheme-dark
+      default: may4th--PrequelsScheme-dark
       options:
-          - label: The Dark Side
-            value: may4th--Scheme-dark
+          - label: Prequels
+            value: may4th--PrequelsScheme-dark
     - id: typograph-settings
       title: Typograph Settings
       type: heading
@@ -477,7 +477,7 @@ body {
 	--side-dock-actions-border-color: transparent;
 } */
 
-/* ---- The Light Side ---- */
+/* ---- Prequels (light) ---- */
 .theme-light {
 	--accent-h: 12;
 	--accent-s: 31%;
@@ -578,26 +578,31 @@ body {
 	--header-active-bg: rgba(31, 34, 37, 0.03);
 }
 
+/* ---- Prequels (dark) ---- */
+
 .theme-dark {
 	--accent-h: 8;
 	--accent-s: 87%;
 	--accent-l: 60%;
 
-	--background-primary: #1B363D;
+	--background-primary: #1B3240; /* #1B363D;*/
 	--background-primary-alt: #313D40;
 	--background-secondary: #38464B;
 	--background-secondary-alt: #38464B;
 
 	--background-gradient: linear-gradient(
 		155deg,
-		#1B363D 0%,
+		#1B3240 0%,
 		#313D40,
 		#38464B
+		/* #1B363D 0%,
+		#313D40,
+		#38464B */
 	);
 
-	--background-modifier-border: #313D40;
-	--background-modifier-hover: #313D40;
-
+	--background-modifier-border: #3C3E40; /* #313D40; */
+	--background-modifier-hover: #38464B66; /* original: #313D40; *** #38464B (solid, matches secondary) */
+/* old base colors (dublicates)
 	--color-base-00: #1B363D;
 	--color-base-05: #313D40;
 	--color-base-10: #38464B;
@@ -609,7 +614,20 @@ body {
 	--color-base-50: #F29472;
 	--color-base-60: #F26B5E;
 	--color-base-70: #F26B5E;
-	--color-base-100: #F2C6B6;
+	--color-base-100: #F2C6B6; */
+	
+	--color-base-00: #F0F1F2;   /* lightest gray (backgrounds, highlights) */
+	--color-base-05: #F2C6B6;   /* light peach (secondary background/accent) */
+	--color-base-10: #F2A285;   /* peach-orange */
+	--color-base-20: #F29472;   /* muted orange */
+	--color-base-25: #F26B5E;   /* coral */
+	--color-base-30: #D9AD2B;   /* golden yellow */
+	--color-base-35: #3C3E40;   /* dark neutral gray */
+	--color-base-40: #313D40;   /* dark blue-gray */
+	--color-base-50: #38464B;   /* slate blue-gray */
+	--color-base-60: #1B3240;   /* deep blue */
+	--color-base-70: #1B363D;   /* deep blue-green */
+	--color-base-100: #593325;  /* deep brown (darkest, for strong contrast) */
 
 	--bold-color: #F2C6B6;
 	--bold-modifier: 200;
@@ -1139,7 +1157,6 @@ body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 
 body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
-	.workspace-leaf
 	.workspace-leaf-content
 	.nav-header
 	.nav-action-button:hover {
