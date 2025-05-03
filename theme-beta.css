@@ -1249,8 +1249,10 @@ body:not(.is-phone) .workspace {
 	background: var(--background-gradient);
 }
 
-body.is-phone .workspace {
+/* Make sure this is present and applies to all: */
+body .workspace {
 	background-color: var(--background-secondary);
+	background: var(--background-gradient);
 }
 
 .workspace-tabs .workspace-leaf {
@@ -1272,6 +1274,8 @@ body.is-phone .workspace {
 
 body:not(.is-phone) .workspace-tab-container {
 	background-color: var(--background-primary);
+	border-radius: var(--root-workspace-radius);
+	box-shadow: var(--root-workspace-shadow);
 }
 
 .workspace .mod-left-split .workspace-tab-container {
@@ -1294,12 +1298,15 @@ body:not(.is-phone) .workspace-tab-container {
 
 .workspace .mod-root .workspace-tab-header-container {
 	background-color: var(--mod-root-header-background);
+	padding: 0px 12px 4px 0px;
+	margin: var(--mod-root-header-margin);
 }
 
 .workspace .mod-root .workspace-tab-header {
 	padding: 2px;
 	border: 1px solid transparent;
 	border-radius: var(--radius-s);
+	background-color: var(--tab-background-active);
 }
 
 .workspace .mod-root .workspace-tab-header:not(.is-active):hover {
@@ -1460,8 +1467,8 @@ body:not(.is-mobile)
 /* markdown */
 /* file header title */
 body:not(.is-phone) .view-header-title-parent {
-	width: 0;
-	opacity: 0;
+	width: auto;
+	opacity: 1;
 }
 
 @media (hover: hover) {
