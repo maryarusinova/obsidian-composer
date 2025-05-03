@@ -1914,3 +1914,62 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   background-color: #F26B5E; /* coral/orange */
   color: #F0F1F2;
 }
+
+/* General input fields, dropdowns, and selects */
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select,
+.theme-dark .dropdown,
+.theme-dark .setting-item-control input,
+.theme-dark .setting-item-control select {
+  background-color: #313D40 !important;   /* dark blue-gray */
+  color: #F0F1F2 !important;              /* very light gray text */
+  border: none;
+}
+
+/* Disabled fields */
+.theme-dark input:disabled,
+.theme-dark select:disabled,
+.theme-dark textarea:disabled {
+  background-color: #38464B !important;   /* slightly lighter blue-gray */
+  color: #8DA6A6 !important;              /* muted text */
+}
+
+/* Toggle switches and checkboxes */
+.theme-dark .checkbox-container,
+.theme-dark .toggle,
+.theme-dark .switch {
+  background-color: #313D40 !important;
+  border: 1.5px solid #38464B !important;
+}
+
+.theme-dark .checkbox-container input:checked + .checkmark,
+.theme-dark .toggle.is-enabled,
+.theme-dark .switch.is-enabled {
+  background-color: #F29472 !important;   /* accent/peach for ON state */
+  border-color: #F29472 !important;
+}
+
+/* Button hover/focus states */
+.theme-dark button:hover,
+.theme-dark .button:hover,
+.theme-dark input[type="button"]:hover,
+.theme-dark input[type="submit"]:hover {
+  background-color: #38464B66 !important; /* semi-transparent blue-gray */
+}
+
+/* Accent/destructive buttons (keep coral/orange) */
+.theme-dark .button.danger,
+.theme-dark button.danger,
+.theme-dark .button.accent,
+.theme-dark button.accent {
+  background-color: #F26B5E !important;
+  color: #F0F1F2 !important;
+}
+
+/* Special highlight (if you want to keep gold for rare cases) */
+.theme-dark .button.special,
+.theme-dark button.special {
+  background-color: #D9AD2B !important;
+  color: #1B3240 !important;
+}
