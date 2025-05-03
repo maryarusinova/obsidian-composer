@@ -581,6 +581,11 @@ body {
 /* ---- Prequels (dark) ---- */
 
 .theme-dark {
+	--text-normal: #F0F1F2;      /* Use your lightest gray for main text */
+	--text-accent: #F2A285;      /* Accent text, if needed */
+	--text-muted: #8DA6A6;       /* Muted/secondary text */
+	--text-faint: #3C3E40;       /* Faint text, still visible on dark bg */
+
 	--accent-h: 8;
 	--accent-s: 87%;
 	--accent-l: 60%;
