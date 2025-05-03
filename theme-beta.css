@@ -607,6 +607,7 @@ body {
 
 	--background-modifier-border: #3C3E40; /* #313D40; */
 	--background-modifier-hover: #38464B66; /* original: #313D40; *** #38464B (solid, matches secondary) */
+	--background-modifier-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 /* old base colors (dublicates)
 	--color-base-00: #1B363D;
 	--color-base-05: #313D40;
