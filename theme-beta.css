@@ -1,6 +1,6 @@
 /* @settings
-name: Composer Theme
-id: obsidian-composer-theme
+name: May the 4th
+id: obsidian-may4th-theme
 settings:
     -
     - id: theme-variant-light
@@ -8,19 +8,19 @@ settings:
       description: Choose a color scheme for the theme
       type: class-select
       allowEmpty: false
-      default: composer--XiaScheme-light
+      default: may4th--Scheme-light
       options:
-          - label: Xiá
-            value: composer--XiaScheme-light
+          - label: The Light Side
+            value: may4th--Scheme-light
     - id: theme-variant-dark
       title: Color Scheme
       description: Choose a color scheme for the theme
       type: class-select
       allowEmpty: false
-      default: composer--XiaScheme-dark
+      default: may4th--Scheme-dark
       options:
-          - label: Xiá
-            value: composer--XiaScheme-dark
+          - label: The Dark Side
+            value: may4th--Scheme-dark
     - id: typograph-settings
       title: Typograph Settings
       type: heading
@@ -45,18 +45,18 @@ settings:
       description: Choose prefered Callout style
       type: class-select
       allowEmpty: false
-      default: composer--DefaultCalloutStyle
+      default: may4th--DefaultCalloutStyle
       options:
           - label: Default
-            value: composer--DefaultCalloutStyle
+            value: may4th--DefaultCalloutStyle
           - label: Subtle Grid
-            value: composer--SubtleGridCallout
+            value: may4th--SubtleGridCallout
           - label: Clean Line
-            value: composer--CleanLineCallout
+            value: may4th--CleanLineCallout
           - label: Github Style
-            value: composer--GithubCallout
+            value: may4th--GithubCallout
           - label: Window Panel
-            value: composer--WindowPanelCallout
+            value: may4th--WindowPanelCallout
     - id: table-setting
       title: Table
       type: heading
@@ -67,17 +67,17 @@ settings:
       description: Choose prefered table style
       type: class-select
       allowEmpty: false
-      default: composer--DefaultTableStyle
+      default: may4th--DefaultTableStyle
       options:
           - label: Default
-            value: composer--DefaultTableStyle
+            value: may4th--DefaultTableStyle
           - label: Obsidian
-            value: composer--ObsidianTableStyle
+            value: may4th--ObsidianTableStyle
           - label: Borderless
-            value: composer--BorderlessTableStyle
+            value: may4th--BorderlessTableStyle
           - label: Three Line(Academic)
-            value: composer--AcademicTableStyle
-    - id: composer--HideStripedTableBackground
+            value: may4th--AcademicTableStyle
+    - id: may4th--HideStripedTableBackground
       title: Hide Striped Background
       type: class-toggle
     - id: typograph-paragraph
@@ -85,7 +85,7 @@ settings:
       type: heading
       level: 3
       collapsed: true    
-    - id: composer--ParagraphIndent
+    - id: may4th--ParagraphIndent
       title: Paragraph Indent
       description: indent the first line of a paragraph
       type: class-toggle
@@ -127,7 +127,7 @@ settings:
       type: heading
       level: 3
       collapsed: true
-    - id: composer--RemoveTaskCompletedDecoration
+    - id: may4th--RemoveTaskCompletedDecoration
       title: Remove Task Completed Decoration
       description: Remove the strikethrough for completed tasks
       type: class-toggle
@@ -157,18 +157,18 @@ settings:
       level: 3
       collapsed: true
 
-    - id: composer--DisableHeadingLineEditingHighlight
+    - id: may4th--DisableHeadingLineEditingHighlight
       title: Disable Heading Line Editing Highlight
       description: Disable line highlight when editing heading
       type: class-toggle
       default: false
 
-    - id: composer--DisableHeadingDecoration-ReadingView
+    - id: may4th--DisableHeadingDecoration-ReadingView
       title: Disable Heading Decoration (Reading View)
       description: Disable decoration before heading (reading view)
       type: class-toggle
       default: false
-    - id: composer--DisableHeadingDecoration-LivePreview
+    - id: may4th--DisableHeadingDecoration-LivePreview
       title: Disable Heading Decoration (Live Preview View)
       description: Disable decoration before heading (live preview view)
       type: class-toggle
@@ -258,14 +258,14 @@ settings:
       type: heading
       level: 2
       collapsed: true
-    - id: composer--DisableNavHeaderAutoHide
+    - id: may4th--DisableNavHeaderAutoHide
       title: Disable Nav Header Auto Hide
       description: Enable this option to disable the auto-hide of the nav header
       type: class-toggle
-    - id: composer--DisableFileFolderIcon
+    - id: may4th--DisableFileFolderIcon
       title: Disable File Folder Icon
       type: class-toggle
-    - id: composer--EnableIndentationGuidLine
+    - id: may4th--EnableIndentationGuidLine
       title: Enable Indentation Guide Line
       description: show indentation guide line for file tree, ordered list, unordered list, and task list
       type: class-toggle
@@ -282,15 +282,15 @@ settings:
       type: heading
       level: 3
       collapsed: true
-    - id: composer--EnableFilenameLineFeed
+    - id: may4th--EnableFilenameLineFeed
       title: Enable Filename Line Feed
       description: enable line feed for filename
       type: class-toggle
-    - id: composer--EnableHiddenFileTag
+    - id: may4th--EnableHiddenFileTag
       title: Enable Hidden File Tag
       description: enable hidden file tag
       type: class-toggle
-    - id: composer--EnableHiddenFileTagHover
+    - id: may4th--EnableHiddenFileTagHover
       title: Enable Hidden File Tag Hover
       description: enable hidden file tag hover
       type: class-toggle
@@ -304,12 +304,12 @@ settings:
       description: Choose prefered outline style
       type: class-select
       allowEmpty: false
-      default: composer--DefaultOutlineStyle
+      default: may4th--DefaultOutlineStyle
       options:
           - label: Default 默认
-            value: composer--DefaultOutlineStyle
+            value: may4th--DefaultOutlineStyle
           - label: Node 节点
-            value: composer--NodeOutlineStyle
+            value: may4th--NodeOutlineStyle
     - id: outline-collapsed-icon-opacity
       title: Outline Collapsed Icon Opacity
       description: Set the opacity of the collapsed icon
@@ -477,7 +477,7 @@ body {
 	--side-dock-actions-border-color: transparent;
 } */
 
-/* ---- Xia ---- */
+/* ---- The Light Side ---- */
 .theme-light {
 	--accent-h: 12;
 	--accent-s: 31%;
@@ -750,7 +750,7 @@ body {
 }
 
 /* subtle grid callout style */
-.composer--SubtleGridCallout .callout {
+.may4th--SubtleGridCallout .callout {
 	background: linear-gradient(
 		150deg,
 		rgba(var(--callout-color), 0.15) 0%,
@@ -762,7 +762,7 @@ body {
 	padding: 4px;
 }
 
-.composer--SubtleGridCallout .callout::before {
+.may4th--SubtleGridCallout .callout::before {
 	content: "";
 	position: absolute;
 	top: 8px;
@@ -786,53 +786,53 @@ body {
 	mask-composite: intersect;
 }
 
-.composer--SubtleGridCallout .callout-title {
+.may4th--SubtleGridCallout .callout-title {
 	padding: 8px 16px 8px 16px;
 }
 
-.composer--SubtleGridCallout .callout-content {
+.may4th--SubtleGridCallout .callout-content {
 	padding: 0px 16px 0px 16px;
 }
 
 /* window panel callout */
-.composer--WindowPanelCallout .callout {
+.may4th--WindowPanelCallout .callout {
 	border: 1px solid rgba(var(--callout-color), 0.68);
 	position: relative;
 	background-color: transparent;
 	padding: 0px;
 }
 
-.composer--WindowPanelCallout .callout-title {
+.may4th--WindowPanelCallout .callout-title {
 	border-bottom: 1px solid rgba(var(--callout-color), 0.68);
 	background-color: rgba(var(--callout-color), 0.1);
 	padding: 8px 16px 8px 16px;
 }
 
-.composer--WindowPanelCallout .callout-content {
+.may4th--WindowPanelCallout .callout-content {
 	padding: 0px 16px;
 }
 
 /* clean line callout */
-.composer--CleanLineCallout .callout {
+.may4th--CleanLineCallout .callout {
 	background-color: transparent;
 }
 
-.composer--CleanLineCallout .callout-title {
+.may4th--CleanLineCallout .callout-title {
 	position: relative;
 	padding: 0px 0px 8px 0px;
 }
 
-.composer--CleanLineCallout .callout.is-collapsed .callout-title {
+.may4th--CleanLineCallout .callout.is-collapsed .callout-title {
 	padding: initial;
 }
 
-.composer--CleanLineCallout .callout.is-collapsed .callout-title::after {
+.may4th--CleanLineCallout .callout.is-collapsed .callout-title::after {
 	display: none;
 	height: 0px;
 	background: initial;
 }
 
-.composer--CleanLineCallout .callout-title::after {
+.may4th--CleanLineCallout .callout-title::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -849,7 +849,7 @@ body {
 }
 
 /* github callout */
-.composer--GithubCallout .callout {
+.may4th--GithubCallout .callout {
 	border: none;
 	border-left: rgba(var(--callout-color), 0.6) 4px solid;
 	border-radius: 0px;
@@ -857,7 +857,7 @@ body {
 	padding: 8px 16px 8px 16px;
 }
 
-.composer--GithubCallout .callout-title {
+.may4th--GithubCallout .callout-title {
 	gap: var(--size-4-2);
 }
 
@@ -972,7 +972,7 @@ body .markdown-rendered mark {
 	background-color: var(--background-secondary);
 }
 
-.composer--ObsidianTableStyle {
+.may4th--ObsidianTableStyle {
 	.el-table table th,
 	.el-table table td,
 	.table-wrapper table th,
@@ -982,7 +982,7 @@ body .markdown-rendered mark {
 	}
 }
 
-.composer--BorderlessTableStyle {
+.may4th--BorderlessTableStyle {
 	.el-table table,
 	.table-wrapper table {
 		--table-border-width: 0px;
@@ -996,7 +996,7 @@ body .markdown-rendered mark {
 	}
 }
 
-body:not(.composer--HideStripedTableBackground) {
+body:not(.may4th--HideStripedTableBackground) {
 	.el-table table,
 	.table-wrapper table {
 		background-color: var(--background-primary-alt);
@@ -1005,7 +1005,7 @@ body:not(.composer--HideStripedTableBackground) {
 	}
 }
 
-.composer--AcademicTableStyle {
+.may4th--AcademicTableStyle {
 	--table-header-border-width: 2px;
 	--table-header-border-color: var(--text-normal);
 
@@ -1128,7 +1128,7 @@ body:not(.is-mobile) .nav-buttons-container {
 	width: fit-content;
 }
 
-body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
 	.workspace-leaf-content
 	.nav-header
@@ -1136,7 +1136,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
 	background-color: transparent;
 }
 
-body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
 	.workspace-leaf-content
 	.nav-header:hover
@@ -1144,7 +1144,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
 	background-color: var(--nav-button-container-bg);
 }
 
-body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
 	.workspace-leaf
 	.workspace-leaf-content
@@ -1155,7 +1155,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
 	border-radius: var(--clickable-icon-radius);
 }
 
-body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
 	.workspace-leaf-content
 	.nav-header
@@ -1174,7 +1174,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
 		background-color 120ms linear;
 }
 
-body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
 	.workspace-leaf-content
 	.nav-header
@@ -1182,7 +1182,7 @@ body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
 	background-color: var(--icon-color-active);
 }
 
-body:not(.is-mobile):not(.composer--DisableNavHeaderAutoHide)
+body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	.mod-sidedock
 	.workspace-leaf-content
 	.nav-header:hover
@@ -1485,12 +1485,12 @@ body:not(.is-phone) .view-header-title-parent {
 }
 
 /* enable indentation for file explorer, ordered list, unordered list, etc.*/
-body.composer--EnableIndentationGuidLine {
+body.may4th--EnableIndentationGuidLine {
 	--indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
 }
 
 /* enable filename line feed */
-body.composer--EnableFilenameLineFeed .nav-file-title-content {
+body.may4th--EnableFilenameLineFeed .nav-file-title-content {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-all;
@@ -1498,10 +1498,10 @@ body.composer--EnableFilenameLineFeed .nav-file-title-content {
 }
 
 /* enable hidden file tag */
-body.composer--EnableHiddenFileTag .nav-file-tag {
+body.may4th--EnableHiddenFileTag .nav-file-tag {
 	display: none;
 }
-body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
+body.may4th--EnableHiddenFileTag.may4th--EnableHiddenFileTagHover
 	.nav-file:hover
 	.nav-file-tag {
 	display: inline;
@@ -1513,7 +1513,7 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 * Source: https://github.com/subframe7536/obsidian-theme-maple
 * Licensed under MIT License (https://github.com/subframe7536/obsidian-theme-maple/blob/main/LICENSE)
 */
-.composer--NodeOutlineStyle
+.may4th--NodeOutlineStyle
 	.workspace-leaf-content[data-type="outline"]
 	.view-content {
 	/* Base styles for outline container */
@@ -1750,10 +1750,10 @@ body.composer--EnableHiddenFileTag.composer--EnableHiddenFileTagHover
 	gap: 2px;
 }
 
-body:not(.composer--DisableFileFolderIcon)
+body:not(.may4th--DisableFileFolderIcon)
 	.workspace-leaf-content[data-type="file-explorer"]
 	.tree-item-icon.collapse-icon,
-body:not(.composer--DisableFileFolderIcon)
+body:not(.may4th--DisableFileFolderIcon)
 	.workspace-leaf-content[data-type="bookmarks"]
 	.tree-item-icon.collapse-icon {
 	background-color: var(--icon-color);
@@ -1762,11 +1762,11 @@ body:not(.composer--DisableFileFolderIcon)
 	-webkit-mask-repeat: no-repeat;
 }
 
-body:not(.composer--DisableFileFolderIcon)
+body:not(.may4th--DisableFileFolderIcon)
 	.workspace-leaf-content[data-type="file-explorer"]
 	.is-collapsed
 	.tree-item-icon.collapse-icon,
-body:not(.composer--DisableFileFolderIcon)
+body:not(.may4th--DisableFileFolderIcon)
 	.workspace-leaf-content[data-type="bookmarks"]
 	.is-collapsed
 	.tree-item-icon.collapse-icon {
@@ -1791,43 +1791,43 @@ body:not(.composer--DisableFileFolderIcon)
 * Paragraph indent
 * thanks for https://forum-zh.obsidian.md/t/topic/40452
 */
-.composer--ParagraphIndent {
+.may4th--ParagraphIndent {
 	--paragraph-indent: calc(var(--font-text-size) * 2);
 }
 
-.composer--ParagraphIndent
+.may4th--ParagraphIndent
 	.markdown-reading-view
 	:is([class="cm-line"], [class="cm-active cm-line"], p),
-.composer--ParagraphIndent
+.may4th--ParagraphIndent
 	.is-live-preview
 	:is([class="cm-line"], [class="cm-active cm-line"], p) {
 	text-indent: var(--paragraph-indent);
 }
 
-.composer--ParagraphIndent .markdown-reading-view p > br,
-.composer--ParagraphIndent .is-live-preview p > br {
+.may4th--ParagraphIndent .markdown-reading-view p > br,
+.may4th--ParagraphIndent .is-live-preview p > br {
 	content: "";
 	white-space: pre;
 }
 
-.composer--ParagraphIndent .markdown-reading-view p > br::after,
-.composer--ParagraphIndent .is-live-preview p > br::after {
+.may4th--ParagraphIndent .markdown-reading-view p > br::after,
+.may4th--ParagraphIndent .is-live-preview p > br::after {
 	content: "\000A\200B";
 	margin-inline-end: var(--paragraph-indent);
 }
 
 /* exclude <p within codeblock */
-.composer--ParagraphIndent .markdown-reading-view .cm-preview-code-block p,
-.composer--ParagraphIndent .is-live-preview .cm-preview-code-block p {
+.may4th--ParagraphIndent .markdown-reading-view .cm-preview-code-block p,
+.may4th--ParagraphIndent .is-live-preview .cm-preview-code-block p {
 	text-indent: initial;
 }
 
 /* exclude table */
-.composer--ParagraphIndent
+.may4th--ParagraphIndent
 	.table-cell-wrapper
 	.markdown-reading-view
 	:is([class="cm-line"], [class="cm-active cm-line"], p),
-.composer--ParagraphIndent
+.may4th--ParagraphIndent
 	.table-cell-wrapper
 	.is-live-preview
 	:is([class="cm-line"], [class="cm-active cm-line"], p) {
@@ -1872,6 +1872,6 @@ div.mermaid {
 	letter-spacing: initial;
 }
 
-body.composer--ParagraphIndent div.markdown-reading-view div.mermaid {
+body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 	--paragraph-indent: 0px;
 }
