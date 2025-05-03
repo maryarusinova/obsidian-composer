@@ -1891,3 +1891,26 @@ div.mermaid {
 body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 	--paragraph-indent: 0px;
 }
+
+/* Primary/neutral button */
+.theme-dark .button,
+.theme-dark button:not(.danger):not(.accent):not(.special) {
+  background-color: #38464B; /* rest state: slate blue-gray */
+  color: #F0F1F2;            /* very light gray text */
+  border: none;
+  transition: background 0.2s;
+}
+
+.theme-dark .button:hover,
+.theme-dark button:not(.danger):not(.accent):not(.special):hover {
+  background-color: #38464B66; /* hover: semi-transparent blue-gray */
+}
+
+/* Accent/destructive buttons (keep as is, for reference) */
+.theme-dark .button.danger,
+.theme-dark button.danger,
+.theme-dark .button.accent,
+.theme-dark button.accent {
+  background-color: #F26B5E; /* coral/orange */
+  color: #F0F1F2;
+}
