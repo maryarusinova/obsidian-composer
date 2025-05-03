@@ -581,10 +581,10 @@ body {
 /* ---- Prequels (dark) ---- */
 
 .theme-dark {
-	--text-normal: var(--color-base-00);   /* main text: very light gray */
-	--text-accent: var(--color-base-10);   /* accent text: peach-orange */
-	--text-muted: var(--color-base-35);    /* muted/secondary: dark neutral gray */
-	--text-faint: var(--color-base-40);    /* faint: dark blue-gray */
+	--text-normal: var(--color-base-00);   /* very light gray, main text */
+	--text-accent: var(--color-base-10);   /* peach-orange, accent text */
+	--text-muted: var(--color-base-05);    /* light peach, muted/secondary text */
+	--text-faint: var(--color-base-10);    /* peach-orange, faint text for max contrast */
 
 	--accent-h: 8;
 	--accent-s: 87%;
