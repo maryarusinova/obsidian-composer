@@ -1973,16 +1973,3 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   background-color: #D9AD2B !important;
   color: #1B3240 !important;
 }
-
-.theme-dark .workspace-tab-header-container {
-  position: relative;
-  z-index: 1;
-}
-.theme-dark .workspace-tab-header-container::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  pointer-events: none;
-  background: linear-gradient(to right, transparent 60%, rgba(0,0,0,0.15) 100%);
-  z-index: 2;
-}
