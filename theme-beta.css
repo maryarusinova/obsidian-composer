@@ -2014,13 +2014,13 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   box-sizing: border-box;
 }
 
-/* Make metadata property key background transparent in note body, but keep hover/focus effect 
+/* Metadata property container uses pillbox style with background-primary-alt for all contexts */
 body .metadata-property-key {
   background-color: transparent !important;
 }
 
 body .metadata-property-key:hover,
 body .metadata-property-key:focus-within {
-  background-color: var(--background-modifier-hover) !important;
+  background-color: var(--background-modifier-border) !important;
 }
-*/
+
