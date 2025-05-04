@@ -1946,15 +1946,15 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 .theme-dark .checkbox-container,
 .theme-dark .toggle,
 .theme-dark .switch {
-  background-color: #313D40 !important;
-  border: 1.5px solid #38464B !important;
+  background-color: var(--color-base-40) !important; /* dark blue-gray */
+  border: 1.5px solid var(--color-base-50) !important;
 }
 
 .theme-dark .checkbox-container input:checked + .checkmark,
 .theme-dark .toggle.is-enabled,
 .theme-dark .switch.is-enabled {
-  background-color: #F29472 !important;   /* accent/peach for ON state */
-  border-color: #F29472 !important;
+  background-color: var(--color-accent) !important; /* accent color */
+  border-color: var(--color-accent) !important;
 }
 
 /* Button hover/focus states */
