@@ -2018,10 +2018,8 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 body .metadata-property-key {
   background-color: transparent !important;
 }
- /*
+
 body .metadata-property-key:hover,
 body .metadata-property-key:focus-within {
-  background-color: var(--background-primary-alt) !important;  /var(--background-modifier-border) !important; ***og value
+  background-color: var(--background-primary-alt) !important; /* /var(--background-modifier-border) !important; ***og value */
 }
-
- */
