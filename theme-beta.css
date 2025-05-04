@@ -2016,7 +2016,7 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 
 /* Metadata property container uses pillbox style with background-primary-alt for all contexts */
 body .metadata-property-key {
-  background-color: transparent !important;
+  background-color: var(--background-primary-alt); /* transparent !important; */
 }
 
 body .metadata-property-key:hover,
