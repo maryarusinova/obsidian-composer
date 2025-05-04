@@ -1942,20 +1942,20 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   color: #8DA6A6 !important;              /* muted text */
 }
 
-/* Toggle switches and checkboxes */
+/* Toggle switches and checkboxes --- doesnt work
 .theme-dark .checkbox-container,
 .theme-dark .toggle,
 .theme-dark .switch {
-  background-color: var(--color-base-40) !important; /* dark blue-gray */
+  background-color: var(--color-base-40) !important; /* dark blue-gray 
   border: 1.5px solid var(--color-base-50) !important;
 }
 
 .theme-dark .checkbox-container input:checked + .checkmark,
 .theme-dark .toggle.is-enabled,
 .theme-dark .switch.is-enabled {
-  background-color: var(--color-accent) !important; /* accent color */
-  border-color: var(--color-accent) !important;
-}
+  background-color: var(--color-accent) !important; 
+  border-color: var(--color-accent) !important; 
+} */
 
 /* Button hover/focus states */
 .theme-dark button:hover,
@@ -1980,3 +1980,18 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   background-color: #D9AD2B !important;
   color: #1B3240 !important;
 }
+
+/* Toggle OFF state (track) */
+.theme-dark .checkbox-container,
+.theme-dark .setting-item-toggle {
+  background-color: var(--color-base-40) !important; /* dark blue-gray */
+  border: 1.5px solid var(--color-base-50) !important;
+}
+
+/* Toggle ON state (track) */
+.theme-dark .checkbox-container.is-enabled,
+.theme-dark .setting-item-toggle.is-enabled {
+  background-color: var(--color-accent) !important; /* accent color */
+  border-color: var(--color-accent) !important;
+}
+

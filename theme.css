@@ -2539,9 +2539,9 @@ li[data-task="!"] > p > input:checked {
 }
 
 /* ["] Quote */
-input[data-task="“"]:checked,
-li[data-task="“"] > input:checked,
-li[data-task="“"] > p > input:checked,
+input[data-task="""]:checked,
+li[data-task="""] > input:checked,
+li[data-task="""] > p > input:checked,
 input[data-task='"']:checked,
 li[data-task='"'] > input:checked,
 li[data-task='"'] > p > input:checked {
