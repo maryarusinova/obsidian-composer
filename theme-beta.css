@@ -2023,3 +2023,8 @@ body .metadata-property-key:hover,
 body .metadata-property-key:focus-within {
   background-color: var(--background-primary-alt) !important; /* /var(--background-modifier-border) !important; ***og value */
 }
+/* fix name of property background color */
+body .metadata-container .metadata-property-key,
+body .metadata-container .metadata-property-name {
+  background-color: var(--background-primary-alt);
+}
