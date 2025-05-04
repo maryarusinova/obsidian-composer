@@ -1995,3 +1995,16 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   border-color: var(--color-accent) !important;
 }
 
+/* Toggle track: add subtle inset shadow for depth */
+.theme-dark .checkbox-container,
+.theme-dark .setting-item-toggle {
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.07), inset 0 0 1px rgba(0,0,0,0.21) !important;
+}
+
+/* Toggle knob: add border to visually seat the knob */
+.theme-dark .setting-item-toggle::after,
+.theme-dark .checkbox-container .checkbox:after {
+  border: 2px solid var(--background-primary) !important;
+  box-sizing: border-box;
+}
+
