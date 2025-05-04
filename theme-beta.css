@@ -2021,6 +2021,7 @@ body .metadata-property-key {
  /*
 body .metadata-property-key:hover,
 body .metadata-property-key:focus-within {
-  background-color: var(--background-primary-alt) !important;  /*var(--background-modifier-border) !important; ***og value */
+  background-color: var(--background-primary-alt) !important;  /var(--background-modifier-border) !important; ***og value
 }
 
+ */
