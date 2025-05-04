@@ -1685,7 +1685,13 @@ body.may4th--EnableHiddenFileTag.may4th--EnableHiddenFileTagHover
 
 /* property */
 .metadata-container {
-	margin-block-end: 0rem;
+	background-color: var(--background-primary-alt); /* or another palette color */
+	border-radius: 8px;
+	border: 1px solid var(--background-modifier-border);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.06); /* optional */
+	padding: 0.25em 0.75em;
+	color: var(--text-normal);
+	margin-block-end: 0rem; /* remove default margin -- this is a hack from og */
 }
 
 .metadata-container + .cm-contentContainer > div > .cm-line:first-child {
