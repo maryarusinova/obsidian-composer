@@ -1685,7 +1685,13 @@ body.may4th--EnableHiddenFileTag.may4th--EnableHiddenFileTagHover
 
 /* property */
 .metadata-container {
-	margin-block-end: 0rem;
+	background-color: var(--background-primary-alt); /* or another palette color */
+	border-radius: 8px;
+	border: 1px solid var(--background-modifier-border);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.06); /* optional */
+	padding: 0.25em 0.75em;
+	color: var(--text-normal);
+	margin-block-end: 0rem; /* remove default margin -- this is a hack from og */
 }
 
 .metadata-container + .cm-contentContainer > div > .cm-line:first-child {
@@ -1922,23 +1928,46 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   color: var(--text-normal);
 }
 
-/* General input fields, dropdowns, and selects */
+/* --------------------- UI ELEMENTS --------------------- */
+/* General input fields, dropdowns, and selects **in the body of note too** */
 .theme-dark input,
 .theme-dark textarea,
 .theme-dark select,
 .theme-dark .dropdown,
 .theme-dark .setting-item-control input,
 .theme-dark .setting-item-control select {
-  background-color: var(--background-primary) !important;   /* dark blue-gray */
+  background-color: var(--background-primary-alt) !important;   /* brown-gray */
   color: var(--text-normal) !important;              /* very light gray text */
   border: none;
 }
 
+/* --------------------- PROPERTY PILLBOX --------------------- */
+
+/* Metadata property container uses pillbox style with background-primary-alt for all contexts */
+body .metadata-property-key {
+	background-color: var(--background-primary-alt); /* transparent !important; */
+  }
+  
+  body .metadata-property-key:hover,
+  body .metadata-property-key:focus-within {
+	background-color: var(--background-primary-alt) !important; /* /var(--background-modifier-border) !important; ***og value */
+  }
+  /* fix name of property background color */
+  body .metadata-container .metadata-property-key,
+  body .metadata-container .metadata-property-name {
+	background-color: var(--background-primary-alt);
+  }
+  
+  body .metadata-container input.metadata-property-key-input,
+  body .metadata-container input.metadata-input {
+	background-color: var(--background-primary-alt) !important;
+  }
+/* --------------------------- UI ELEMENTS CONTINUE --------------------------------- */
 /* Disabled fields */
 .theme-dark input:disabled,
 .theme-dark select:disabled,
 .theme-dark textarea:disabled {
-  background-color: var(--background-primary) !important;   /* slightly lighter blue-gray */
+  background-color: var(--background-primary-alt) !important;   /* slightly lighter blue-gray */
   color: var(--text-muted) !important;              /* muted text */
 }
 
@@ -2006,15 +2035,5 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 .theme-dark .checkbox-container .checkbox:after {
   border: 2px solid var(--background-primary) !important;
   box-sizing: border-box;
-}
-
-/* Make metadata property key background transparent in note body, but keep hover/focus effect */
-body .metadata-property-key {
-  background-color: transparent !important;
-}
-
-body .metadata-property-key:hover,
-body .metadata-property-key:focus-within {
-  background-color: var(--background-modifier-hover) !important;
 }
 
