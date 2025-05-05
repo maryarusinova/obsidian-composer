@@ -2028,3 +2028,7 @@ body .metadata-container .metadata-property-key,
 body .metadata-container .metadata-property-name {
   background-color: var(--background-primary-alt);
 }
+
+body .metadata-container .metadata-property-key-input {
+	background-color: var(--background-primary-alt);
+  }
