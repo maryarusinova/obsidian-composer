@@ -1928,14 +1928,14 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
   color: var(--text-normal);
 }
 
-/* General input fields, dropdowns, and selects */
+/* General input fields, dropdowns, and selects **in the body too** */
 .theme-dark input,
 .theme-dark textarea,
 .theme-dark select,
 .theme-dark .dropdown,
 .theme-dark .setting-item-control input,
 .theme-dark .setting-item-control select {
-  background-color: var(--background-primary) !important;   /* dark blue-gray */
+  background-color: var(--background-primary-alt) !important;   /* dark blue-gray */
   color: var(--text-normal) !important;              /* very light gray text */
   border: none;
 }
@@ -1944,7 +1944,7 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 .theme-dark input:disabled,
 .theme-dark select:disabled,
 .theme-dark textarea:disabled {
-  background-color: var(--background-primary) !important;   /* slightly lighter blue-gray */
+  background-color: var(--background-primary-alt) !important;   /* slightly lighter blue-gray */
   color: var(--text-muted) !important;              /* muted text */
 }
 
