@@ -2042,24 +2042,25 @@ body .metadata-property-key {
 
 body.is-mobile.theme-dark {
   /* Base color system (same as desktop) */
-  --color-base-00: #F0F1F2;   /* very light gray */
-  --color-base-05: #F2C6B6;   /* light peach */
-  --color-base-10: #F2A285;   /* peach-orange */
-  --color-base-20: #F29472;   /* muted orange */
-  --color-base-25: #F26B5E;   /* coral */
-  --color-base-30: #D9AD2B;   /* golden yellow */
-  --color-base-35: #3C3E40;   /* dark neutral gray */
-  --color-base-40: #313D40;   /* dark blue-gray */
-  --color-base-50: #38464B;   /* slate blue-gray */
-  --color-base-60: #1B3240;   /* deep blue */
-  --color-base-70: #1B363D;   /* deep blue-green */
-  --color-base-100: #593325;  /* deep brown */
+  --color-base-00: #F0F1F2;
+  --color-base-05: #F2C6B6;
+  --color-base-10: #F2A285;
+  --color-base-20: #F29472;
+  --color-base-25: #F26B5E;
+  --color-base-30: #D9AD2B;
+  --color-base-35: #3C3E40;
+  --color-base-40: #313D40;
+  --color-base-50: #38464B;
+  --color-base-60: #1B3240;
+  --color-base-70: #1B363D;
+  --color-base-100: #593325;
 
   /* Theme colors */
   --background-primary: #1B3240;
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
+  --background-gradient: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
 
   /* Text colors */
   --text-normal: var(--color-base-00);
@@ -2071,8 +2072,57 @@ body.is-mobile.theme-dark {
   --nav-item-color: var(--text-normal);
 }
 
-/* Ensure nav/file titles use the correct color */
-body.is-mobile.theme-dark .nav-file-title,
-body.is-mobile.theme-dark .nav-folder-title {
-  color: var(--nav-item-color);
+/* Mobile dark theme: apply gradient background to workspace */
+body.is-mobile.theme-dark .workspace {
+  background: var(--background-gradient);
+  background-color: var(--background-secondary);
+}
+
+/* Mobile pillbox property settings */
+body.is-mobile.theme-dark .metadata-container {
+  background-color: var(--background-primary-alt);
+  border-radius: 8px;
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  padding: 0.5em 1em;
+  color: var(--text-normal);
+}
+body.is-mobile.theme-dark .metadata-property {
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--background-primary);
+}
+body.is-mobile.theme-dark .metadata-property-key {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: var(--background-primary-alt);
+  font-size: 0.95em;
+}
+body.is-mobile.theme-dark .metadata-property-value {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: var(--background-primary);
+}
+body.is-mobile.theme-dark .metadata-property-key-input,
+body.is-mobile.theme-dark .metadata-input {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--background-primary-alt) !important;
+  font-size: 0.95em;
+  color: var(--text-normal);
+}
+body.is-mobile.theme-dark .metadata-add-button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: var(--background-primary-alt);
+  color: var(--text-normal);
+}
+@media (hover: hover) {
+  body.is-mobile.theme-dark .metadata-property:hover,
+  body.is-mobile.theme-dark .metadata-property-key:hover,
+  body.is-mobile.theme-dark .metadata-property-value:hover {
+    background-color: var(--background-modifier-hover);
+  }
 }
