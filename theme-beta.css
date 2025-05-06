@@ -2149,15 +2149,25 @@ body.is-mobile.theme-dark {
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
   
-  /* Text colors */
-  --text-normal: #F0F1F2;
-  --text-muted: #F2C6B6;
-  --text-faint: #F2A285;
-  --text-accent: #F26B5E;
-  --text-accent-hover: #F29472;
-  
-  /* Ensure text colors are applied */
-  color: var(--text-normal);
+  /* Base colors - same as desktop */
+  --color-base-00: #F0F1F2;   /* lightest gray (backgrounds, highlights) */
+  --color-base-05: #F2C6B6;   /* light peach (secondary background/accent) */
+  --color-base-10: #F2A285;   /* peach-orange */
+  --color-base-20: #F29472;   /* muted orange */
+  --color-base-25: #F26B5E;   /* coral */
+  --color-base-30: #D9AD2B;   /* golden yellow */
+  --color-base-35: #3C3E40;   /* dark neutral gray */
+  --color-base-40: #313D40;   /* dark blue-gray */
+  --color-base-50: #38464B;   /* slate blue-gray */
+  --color-base-60: #1B3240;   /* deep blue */
+  --color-base-70: #1B363D;   /* deep blue-green */
+  --color-base-100: #593325;  /* deep brown (darkest, for strong contrast) */
+
+  /* Text colors using base colors */
+  --text-normal: var(--color-base-00);   /* very light gray, main text */
+  --text-accent: var(--color-base-10);   /* peach-orange, accent text */
+  --text-muted: var(--color-base-05);    /* light peach, muted/secondary text */
+  --text-faint: var(--color-base-10);    /* peach-orange, faint text for max contrast */
 }
 
 /* Ensure text colors in mobile dark theme components */
@@ -2178,10 +2188,26 @@ body.is-mobile.theme-light {
   --background-primary-alt: #e8eaee;
   --background-secondary: #f1f0ee;
   --background-secondary-alt: #dddfe3;
-  --text-normal: #2d3748;
-  --text-muted: #4a556b;
-  --text-faint: #66788d;
-  --accent-color: #eb5757;
+  
+  /* Base colors - same as desktop light theme */
+  --color-base-00: #f8f4f0;
+  --color-base-05: #f3ece6;
+  --color-base-10: #eee6df;
+  --color-base-20: #e6dcd3;
+  --color-base-25: #d8ccc2;
+  --color-base-30: #c8b9af;
+  --color-base-35: #b6a79d;
+  --color-base-40: #a3958c;
+  --color-base-50: #8a7e76;
+  --color-base-60: #6b625b;
+  --color-base-70: #554d47;
+  --color-base-100: #3a3330;
+
+  /* Text colors using base colors */
+  --text-normal: var(--color-base-100);  /* dark gray, main text */
+  --text-accent: var(--color-base-60);   /* muted brown, accent text */
+  --text-muted: var(--color-base-50);    /* medium gray, muted/secondary text */
+  --text-faint: var(--color-base-40);    /* light gray, faint text */
 }
 
 /* ====== UI ELEMENTS ====== */
