@@ -2037,3 +2037,193 @@ body .metadata-property-key {
   box-sizing: border-box;
 }
 
+/* ====== MOBILE THEME: DARK  ====== */
+/* Mobile-specific theme overrides */
+body.is-mobile {
+  /* Mobile-specific variables */
+  --mobile-header-height: 48px;
+  --mobile-tab-height: 48px;
+  --mobile-bottom-bar-height: 48px;
+  --mobile-font-size: 16px;
+  --mobile-line-height: 1.5;
+  --mobile-padding: 16px;
+  --mobile-radius: 8px;
+}
+
+/* Mobile header */
+body.is-mobile .workspace-tab-header-container {
+  height: var(--mobile-header-height);
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Mobile bottom bar */
+body.is-mobile .mobile-toolbar {
+  height: var(--mobile-bottom-bar-height);
+  background-color: var(--background-primary);
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+/* Mobile content area */
+body.is-mobile .markdown-preview-view,
+body.is-mobile .markdown-source-view {
+  padding: var(--mobile-padding);
+  font-size: var(--mobile-font-size);
+  line-height: var(--mobile-line-height);
+}
+
+/* Mobile buttons and controls */
+body.is-mobile .clickable-icon,
+body.is-mobile .nav-action-button {
+  padding: 12px;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/* Mobile file explorer */
+body.is-mobile .nav-folder-title,
+body.is-mobile .nav-file-title {
+  padding: 12px var(--mobile-padding);
+  font-size: var(--mobile-font-size);
+}
+
+/* Mobile modals and popups */
+body.is-mobile .modal {
+  border-radius: var(--mobile-radius);
+  padding: var(--mobile-padding);
+}
+
+/* Mobile settings */
+body.is-mobile .setting-item {
+  padding: 12px var(--mobile-padding);
+}
+
+/* Mobile callouts */
+body.is-mobile .callout {
+  margin: var(--mobile-padding) 0;
+  padding: var(--mobile-padding);
+  border-radius: var(--mobile-radius);
+}
+
+/* Mobile tables */
+body.is-mobile .table-wrapper {
+  margin: var(--mobile-padding) 0;
+  overflow-x: auto;
+}
+
+/* Mobile code blocks */
+body.is-mobile .markdown-preview-view pre {
+  margin: var(--mobile-padding) 0;
+  padding: var(--mobile-padding);
+  border-radius: var(--mobile-radius);
+}
+
+/* Mobile metadata */
+body.is-mobile .metadata-container {
+  margin: var(--mobile-padding) 0;
+  padding: var(--mobile-padding);
+  border-radius: var(--mobile-radius);
+}
+
+/* Mobile search */
+body.is-mobile .search-input-container {
+  padding: var(--mobile-padding);
+}
+
+/* Mobile command palette */
+body.is-mobile .prompt {
+  padding: var(--mobile-padding);
+  border-radius: var(--mobile-radius);
+}
+
+/* Mobile status bar */
+body.is-mobile .status-bar {
+  height: var(--mobile-bottom-bar-height);
+  padding: 0 var(--mobile-padding);
+}
+
+/* Mobile-specific dark theme adjustments */
+body.is-mobile.theme-dark {
+  --background-primary: #1B3240;
+  --background-primary-alt: #313D40;
+  --background-secondary: #38464B;
+  --background-secondary-alt: #38464B;
+  --text-normal: #F0F1F2;
+  --text-muted: #F2C6B6;
+  --text-faint: #F2A285;
+  --accent-color: #F26B5E;
+}
+
+/* Mobile-specific light theme adjustments */
+body.is-mobile.theme-light {
+  --background-primary: #fafafa;
+  --background-primary-alt: #e8eaee;
+  --background-secondary: #f1f0ee;
+  --background-secondary-alt: #dddfe3;
+  --text-normal: #2d3748;
+  --text-muted: #4a556b;
+  --text-faint: #66788d;
+  --accent-color: #eb5757;
+}
+
+/* ====== UI ELEMENTS ====== */
+
+/* Mobile metadata pillbox styling */
+body.is-mobile .metadata-container {
+  margin: var(--mobile-padding) 0;
+  padding: var(--mobile-padding);
+  border-radius: var(--mobile-radius);
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+}
+
+body.is-mobile .metadata-property {
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary);
+}
+
+body.is-mobile .metadata-property-key {
+  padding: 6px 8px;
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary-alt);
+  font-size: 0.9em;
+}
+
+body.is-mobile .metadata-property-value {
+  padding: 6px 8px;
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary);
+}
+
+body.is-mobile .metadata-property-key-input,
+body.is-mobile .metadata-input {
+  padding: 8px;
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary-alt) !important;
+  font-size: 0.9em;
+}
+
+body.is-mobile .metadata-add-button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary-alt);
+}
+
+/* Mobile metadata hover states */
+@media (hover: hover) {
+  body.is-mobile .metadata-property:hover {
+    background-color: var(--background-modifier-hover);
+  }
+  
+  body.is-mobile .metadata-property-key:hover {
+    background-color: var(--background-modifier-hover);
+  }
+  
+  body.is-mobile .metadata-property-value:hover {
+    background-color: var(--background-modifier-hover);
+  }
+}
+
