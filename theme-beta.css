@@ -2144,11 +2144,6 @@ body.is-mobile .status-bar {
 
 /* Mobile-specific dark theme adjustments */
 body.is-mobile.theme-dark {
-  --background-primary: #1B3240;
-  --background-primary-alt: #313D40;
-  --background-secondary: #38464B;
-  --background-secondary-alt: #38464B;
-  
   /* Base colors - same as desktop */
   --color-base-00: #F0F1F2;   /* lightest gray (backgrounds, highlights) */
   --color-base-05: #F2C6B6;   /* light peach (secondary background/accent) */
@@ -2170,6 +2165,28 @@ body.is-mobile.theme-dark {
   --text-faint: var(--color-base-10);    /* peach-orange, faint text for max contrast */
 }
 
+/* Force text colors in mobile dark theme */
+body.is-mobile.theme-dark,
+body.is-mobile.theme-dark * {
+  color: var(--text-normal) !important;
+}
+
+/* Specific overrides for different text types */
+body.is-mobile.theme-dark .text-accent,
+body.is-mobile.theme-dark .text-accent * {
+  color: var(--text-accent) !important;
+}
+
+body.is-mobile.theme-dark .text-muted,
+body.is-mobile.theme-dark .text-muted * {
+  color: var(--text-muted) !important;
+}
+
+body.is-mobile.theme-dark .text-faint,
+body.is-mobile.theme-dark .text-faint * {
+  color: var(--text-faint) !important;
+}
+
 /* Ensure text colors in mobile dark theme components */
 body.is-mobile.theme-dark .markdown-preview-view,
 body.is-mobile.theme-dark .markdown-source-view,
@@ -2179,7 +2196,7 @@ body.is-mobile.theme-dark .metadata-property-key,
 body.is-mobile.theme-dark .metadata-property-value,
 body.is-mobile.theme-dark .metadata-property-key-input,
 body.is-mobile.theme-dark .metadata-input {
-  color: var(--text-normal);
+  color: var(--text-normal) !important;
 }
 
 /* Mobile-specific light theme adjustments */
