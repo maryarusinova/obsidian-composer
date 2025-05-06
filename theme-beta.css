@@ -2148,10 +2148,28 @@ body.is-mobile.theme-dark {
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
+  
+  /* Text colors */
   --text-normal: #F0F1F2;
   --text-muted: #F2C6B6;
   --text-faint: #F2A285;
-  --accent-color: #F26B5E;
+  --text-accent: #F26B5E;
+  --text-accent-hover: #F29472;
+  
+  /* Ensure text colors are applied */
+  color: var(--text-normal);
+}
+
+/* Ensure text colors in mobile dark theme components */
+body.is-mobile.theme-dark .markdown-preview-view,
+body.is-mobile.theme-dark .markdown-source-view,
+body.is-mobile.theme-dark .metadata-container,
+body.is-mobile.theme-dark .metadata-property,
+body.is-mobile.theme-dark .metadata-property-key,
+body.is-mobile.theme-dark .metadata-property-value,
+body.is-mobile.theme-dark .metadata-property-key-input,
+body.is-mobile.theme-dark .metadata-input {
+  color: var(--text-normal);
 }
 
 /* Mobile-specific light theme adjustments */
