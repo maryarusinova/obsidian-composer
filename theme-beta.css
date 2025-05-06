@@ -2288,3 +2288,7 @@ body.is-mobile .metadata-add-button {
   }
 }
 
+body.is-mobile.theme-dark {
+  --nav-item-color: var(--text-normal);
+}
+
