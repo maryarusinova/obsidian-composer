@@ -2091,7 +2091,7 @@ body.is-mobile.theme-dark .metadata-property {
   margin: 4px 0;
   padding: 8px;
   border-radius: 6px;
-  background-color: var(--background-primary);
+  background-color: var(--background-primary-alt);
 }
 body.is-mobile.theme-dark .metadata-property-key {
   padding: 6px 8px;
@@ -2102,7 +2102,7 @@ body.is-mobile.theme-dark .metadata-property-key {
 body.is-mobile.theme-dark .metadata-property-value {
   padding: 6px 8px;
   border-radius: 6px;
-  background-color: var(--background-primary);
+  background-color: var(--background-primary-alt);
 }
 body.is-mobile.theme-dark .metadata-property-key-input,
 body.is-mobile.theme-dark .metadata-input {
