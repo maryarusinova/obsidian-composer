@@ -2126,7 +2126,3 @@ body.is-mobile.theme-dark .metadata-add-button {
     background-color: var(--background-modifier-hover);
   }
 }
-
-body.is-mobile.theme-dark {
---mobile-sidebar-background: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
-}
