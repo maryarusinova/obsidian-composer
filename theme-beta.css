@@ -8,19 +8,19 @@ settings:
       description: Choose a color scheme for the theme
       type: class-select
       allowEmpty: false
-      default: may4th--PrequelsScheme-light
+      default: may4th--CoruscantScheme-light
       options:
-          - label: Prequels
-            value: may4th--PrequelsScheme-light
+          - label: Coruscant
+            value: may4th--CoruscantScheme-light
     - id: theme-variant-dark
       title: Color Scheme
       description: Choose a color scheme for the theme
       type: class-select
       allowEmpty: false
-      default: may4th--PrequelsScheme-dark
+      default: may4th--CoruscantScheme-dark
       options:
-          - label: Prequels
-            value: may4th--PrequelsScheme-dark
+          - label: Coruscant
+            value: may4th--CoruscantScheme-dark
     - id: typograph-settings
       title: Typograph Settings
       type: heading
@@ -477,7 +477,7 @@ body {
 	--side-dock-actions-border-color: transparent;
 } */
 
-/* ---- Prequels (light) ---- */
+/* ---- Coruscant (light) ---- */
 .theme-light {
 	--accent-h: 12;
 	--accent-s: 31%;
@@ -578,7 +578,7 @@ body {
 	--header-active-bg: rgba(31, 34, 37, 0.03);
 }
 
-/* ---- Prequels (dark) ---- */
+/* ---- Coruscant (dark) ---- */
 
 .theme-dark {
 	--text-normal: var(--color-base-00);   /* very light gray, main text */
@@ -706,14 +706,14 @@ body {
 	word-spacing: var(--paragraph-word-spacing);
 }
 
-/* reduce spacing between metadata-container and first cm-line */
+/* reduce spacing between metadata-container and first cm-line 
 .metadata-container
 	~ .cm-contentContainer
 	.cm-content
 	> div[contenteditable="false"]
 	+ .cm-line {
 	padding-top: 0.5rem;
-}
+} */
 
 /* blockquote */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote,
@@ -2060,7 +2060,7 @@ body.is-mobile.theme-dark {
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
-  --background-gradient: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
+  --background-gradient: radial-gradient(circle, #1B3240 0%, #313D40, #38464B);
 
   /* Text colors */
   --text-normal: var(--color-base-00);
@@ -2070,6 +2070,12 @@ body.is-mobile.theme-dark {
 
   /* Nav/file list */
   --nav-item-color: var(--text-normal);
+
+  --mobile-sidebar-background: radial-gradient(
+    circle at 50% 30%,
+    var(--color-base-20) 0%,
+    var(--background-secondary) 80%
+  );
 }
 
 /* Mobile dark theme: apply gradient background to workspace */
