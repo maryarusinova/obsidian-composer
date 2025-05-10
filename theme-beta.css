@@ -2070,8 +2070,6 @@ body.is-mobile.theme-dark {
 
   /* Nav/file list */
   --nav-item-color: var(--text-normal);
-
-  --mobile-sidebar-background: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
 }
 
 /* Mobile dark theme: apply gradient background to workspace */
@@ -2127,4 +2125,8 @@ body.is-mobile.theme-dark .metadata-add-button {
   body.is-mobile.theme-dark .metadata-property-value:hover {
     background-color: var(--background-modifier-hover);
   }
+}
+
+body.is-mobile.theme-dark {
+--mobile-sidebar-background: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
 }
