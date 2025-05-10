@@ -2060,7 +2060,7 @@ body.is-mobile.theme-dark {
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
-  --background-gradient: radial-gradient(circle, #1B3240 0%, #313D40, #38464B);
+  --background-gradient: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
 
   /* Text colors */
   --text-normal: var(--color-base-00);
@@ -2071,11 +2071,7 @@ body.is-mobile.theme-dark {
   /* Nav/file list */
   --nav-item-color: var(--text-normal);
 
-  --mobile-sidebar-background: radial-gradient(
-    circle at 50% 30%,
-    var(--color-base-20) 0%,
-    var(--background-secondary) 80%
-  );
+  --mobile-sidebar-background: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
 }
 
 /* Mobile dark theme: apply gradient background to workspace */
