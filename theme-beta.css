@@ -2204,3 +2204,13 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
     background-color: var(--background-modifier-hover);
   }
 }
+
+body.is-mobile.theme-dark .workspace-drawer.mod-left,
+body.is-mobile.theme-dark .workspace-drawer.mod-right {
+  background: var(--background-gradient);
+  background-color: var(--background-secondary);
+  background-attachment: fixed;
+  background-size: 150% 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
