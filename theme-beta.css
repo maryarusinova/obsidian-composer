@@ -1972,11 +1972,11 @@ body .metadata-property-key {
   color: var(--text-muted) !important;              /* muted text */
 }
 
-/* Toggle switches and checkboxes --- doesnt work
+/* Toggle switches and checkboxes --- doesnt work with dark theme */
 .theme-dark .checkbox-container,
 .theme-dark .toggle,
 .theme-dark .switch {
-  background-color: var(--color-base-40) !important; /* dark blue-gray 
+  background-color: var(--color-base-40) !important; /* dark blue-gray */
   border: 1.5px solid var(--color-base-50) !important;
 }
 
@@ -1985,7 +1985,7 @@ body .metadata-property-key {
 .theme-dark .switch.is-enabled {
   background-color: var(--color-accent) !important; 
   border-color: var(--color-accent) !important; 
-} */
+} 
 
 /* Button hover/focus states */
 .theme-dark button:hover,
