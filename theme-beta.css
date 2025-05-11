@@ -2126,3 +2126,14 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
   }
 }
 
+body.is-mobile.theme-dark .workspace-drawer-header,
+body.is-mobile.theme-dark .nav-header,
+body.is-mobile.theme-dark .nav-buttons-container,
+body.is-mobile.theme-dark .nav-search-container,
+body.is-mobile.theme-dark .nav-folder-title,
+body.is-mobile.theme-dark .nav-files-container > .nav-header {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
