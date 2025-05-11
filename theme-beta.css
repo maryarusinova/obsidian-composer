@@ -595,8 +595,8 @@ body {
 	--background-secondary: #38464B;
 	--background-secondary-alt: #38464B;
 
-	--background-gradient: radial-gradient(
-		ellipse at 98% 97%,
+	--background-gradient: linear-gradient(
+		155deg,
 		#1B3240 0%,
 		#313D40 50%,
 		#38464B 80%,
