@@ -2043,11 +2043,13 @@ body.is-mobile.theme-dark {
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
   
-  /* Enhanced gradient with better color stops and angle */
+  /* Enhanced gradient with smoother transitions */
   --background-gradient: linear-gradient(
     155deg,
     #1B3240 0%,
-    #313D40 40%,
+    #1B3240 20%,
+    #313D40 50%,
+    #38464B 80%,
     #38464B 100%
   );
 
@@ -2067,8 +2069,9 @@ body.is-mobile.theme-dark {
 body.is-mobile.theme-dark .workspace {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
-  background-attachment: fixed; /* Keep gradient fixed while scrolling */
-  background-size: cover;
+  background-attachment: fixed;
+  background-size: 200% 200%; /* Larger size to prevent edges */
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -2076,11 +2079,17 @@ body.is-mobile.theme-dark .workspace {
 body.is-mobile.theme-dark .workspace-leaf-content {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  background-position: center;
 }
 
 body.is-mobile.theme-dark .workspace-tab-container {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  background-position: center;
 }
 
 /* Add subtle gradient to mobile metadata container */
@@ -2088,6 +2097,8 @@ body.is-mobile.theme-dark .metadata-container {
   background: linear-gradient(
     155deg,
     var(--background-primary-alt) 0%,
+    var(--background-primary-alt) 30%,
+    var(--background-primary) 70%,
     var(--background-primary) 100%
   );
   border-radius: 8px;
