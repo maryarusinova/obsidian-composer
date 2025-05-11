@@ -1934,7 +1934,7 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 .theme-dark .metadata-property-value,
 .theme-dark .metadata-property-key-input,
 .theme-dark .metadata-input {
-  background-color: var(--background-primary-alt) !important;
+  /* background-color: var(--background-primary-alt) !important; */
 }
 
 /* --------------------- PROPERTY PILLBOX --------------------- */
