@@ -2040,23 +2040,15 @@ body.is-mobile.theme-dark {
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
-
-  /* UPDATE MOBILE GRADIENT: Linear gradient for smoother transitions */
+  
+  /* Use ONLY linear gradient for mobile dark theme */
   --background-gradient: linear-gradient(
     350deg,
     #1B3240 0%,
     #313D40 50%,
     #38464B 80%,
-    #3C3E40 100% );
-  
-  /* Radial gradient for smoother transitions -- older version 
-  --background-gradient: radial-gradient(
-    ellipse at 120% 120%,
-    #1B3240 0%,
-    #313D40 50%,
-    #38464B 80%,
     #3C3E40 100%
-  ); */
+  );
 
   /* Text colors */
   --text-normal: var(--color-base-00);
@@ -2070,103 +2062,16 @@ body.is-mobile.theme-dark {
   --dropdown-background: var(--background-primary-alt);
 }
 
-/* Mobile dark theme: apply gradient background to workspace with enhanced styling
-body.is-mobile.theme-dark .workspace {
-  background: var(--background-gradient);
-  background-color: var(--background-secondary);
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}  */
-
-/* Mobile dark theme: apply gradient background to workspace with enhanced styling */
-body.is-mobile.theme-dark .nav-files-container {
-  background: var(--background-gradient);
-  background-color: var(--background-secondary);
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position: 98% 97%;
-  background-repeat: no-repeat;
-} 
-
-/* Add gradient to mobile UI elements -----*/
-body.is-mobile.theme-dark .workspace-leaf-content {
-  background: var(--background-gradient);
-  background-color: var(--background-secondary);
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position: 98% 97%;
-  background-repeat: no-repeat;
-}
-
+/* Mobile dark theme: apply gradient background to all relevant containers */
+body.is-mobile.theme-dark .nav-files-container,
+body.is-mobile.theme-dark .workspace-leaf-content,
 body.is-mobile.theme-dark .workspace-tab-container {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-position: 98% 97%;
+  background-position: center bottom;
   background-repeat: no-repeat;
-}
-  
-
-/* property pillbox */
-body.is-mobile.theme-dark .metadata-container {
-  background: var(--background-primary-alt);
-  border-radius: 8px;
-  border: 1px solid var(--background-modifier-border);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-  padding: 0.5em 1em;
-  color: var(--text-normal);
-}
-
-body.is-mobile.theme-dark .metadata-property {
-  margin: 4px 0;
-  padding: 8px;
-  border-radius: 6px;
-  background-color: var(--background-primary);
-}
-
-body.is-mobile.theme-dark .metadata-property-key {
-  padding: 6px 8px;
-  border-radius: 6px;
-  background-color: var(--background-primary-alt);
-  font-size: 0.95em;
-}
-
-body.is-mobile.theme-dark .metadata-property-value {
-  padding: 6px 8px;
-  border-radius: 6px;
-  background-color: var(--background-primary);
-}
-
-body.is-mobile.theme-dark .metadata-property-key-input,
-body.is-mobile.theme-dark .metadata-input {
-  padding: 8px;
-  border-radius: 6px;
-  background-color: var(--background-primary-alt) !important;
-  font-size: 0.95em;
-  color: var(--text-normal);
-}
-
-body.is-mobile.theme-dark .metadata-add-button {
-  margin-top: 8px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  background-color: var(--background-primary-alt);
-  color: var(--text-normal);
-}
-
-/* Mobile UI Elements */
-body.is-mobile.theme-dark input,
-body.is-mobile.theme-dark textarea,
-body.is-mobile.theme-dark select,
-body.is-mobile.theme-dark .dropdown,
-body.is-mobile.theme-dark .setting-item-control input,
-body.is-mobile.theme-dark .setting-item-control select {
-  background-color: var(--background-primary-alt) !important;
-  color: var(--text-normal) !important;
-  border: none;
 }
 
 /* Mobile buttons (from primary to primary-alt)*/
