@@ -1997,15 +1997,6 @@ body .metadata-property-key {
   color: var(--text-normal) !important;
 }
 
-/* Special highlight (if you want to keep gold for rare cases) */
-/*
-.theme-dark .button.special,
-.theme-dark button.special {
-  background-color: var(--color-base-30) !important;
-  color: var(--color-base-60) !important; /* or your preferred text color */
-}
-*/
-
 /* Toggle OFF state (track) */
 .theme-dark .checkbox-container,
 .theme-dark .setting-item-toggle {
@@ -2122,19 +2113,18 @@ body.is-mobile.theme-dark .metadata-add-button {
   }
 }
 
-/* OVERRIDDEN BY UNIFIED BACKGROUND RULES 
 .theme-dark .button,
 .theme-dark button:not(.danger):not(.accent):not(.special) {
-  background-color: var(--background-primary); /* rest state: slate blue-gray */
+  background-color: var(--background-primary); 
   color: var(--text-normal);
   border: none;
   transition: background 0.2s;
 }
 
-/* OVERRIDDEN BY UNIFIED BACKGROUND RULES
+
 body.is-mobile.theme-dark .metadata-property {
   background-color: var(--background-primary);
 }
 body.is-mobile.theme-dark .metadata-property-value {
   background-color: var(--background-primary);
-} */
+} 
