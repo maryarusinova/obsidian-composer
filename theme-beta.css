@@ -2206,7 +2206,7 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
-  background-size: 90% 95%;           /* fit within sidebar padding */
-  background-position: 6% 2%;         /* center inside the padding */
+  background-size: 100% 100%;           /* fit within sidebar padding */
+  background-position: 98% 97%;         /* center inside the padding */
   background-repeat: no-repeat;
 }
