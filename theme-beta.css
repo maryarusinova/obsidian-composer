@@ -2066,12 +2066,12 @@ body.is-mobile.theme-dark {
 body.is-mobile.theme-dark .nav-files-container,
 body.is-mobile.theme-dark .workspace-leaf-content,
 body.is-mobile.theme-dark .workspace-tab-container {
-  background: var(--background-gradient);
-  background-color: var(--background-secondary);
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+    background: var(--background-gradient);
+    background-color: var(--background-secondary);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 /* Mobile buttons (from primary to primary-alt)*/
