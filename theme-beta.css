@@ -2045,8 +2045,8 @@ body.is-mobile.theme-dark {
   --background-gradient: radial-gradient(
     ellipse at 120% 120%,
     #1B3240 0%,
-    #313D40 80%,
-    #38464B 92%,
+    #313D40 50%,
+    #38464B 80%,
     #3C3E40 100%
   );
 
@@ -2078,7 +2078,7 @@ body.is-mobile.theme-dark .nav-files-container {
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-position: center bottom;
+  background-position: 98% 97%;
   background-repeat: no-repeat;
 }
 /* Add gradient to mobile UI elements -----*/
