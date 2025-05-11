@@ -2045,10 +2045,11 @@ body.is-mobile.theme-dark {
   
   /* Radial gradient for smoother transitions */
   --background-gradient: radial-gradient(
-    circle at center,
+    ellipse at 60% 40%,
     #1B3240 0%,
     #313D40 50%,
-    #38464B 100%
+    #38464B 80%,
+    #3C3E40 100%
   );
 
   /* Text colors */
