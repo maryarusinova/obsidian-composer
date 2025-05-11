@@ -2208,6 +2208,6 @@ body.is-mobile.theme-dark .workspace-drawer.mod-right {
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-position: 98% 91%; /* push center to the far edge and near the bottom */
+  background-position: 98% 97%; /* almost at the bottom edge */
   background-repeat: no-repeat;
 }
