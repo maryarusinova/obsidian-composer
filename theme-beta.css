@@ -2040,15 +2040,23 @@ body.is-mobile.theme-dark {
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
+
+  /* UPDATE MOBILE GRADIENT: Linear gradient for smoother transitions */
+  --background-gradient: linear-gradient(
+    350deg,
+    #1B3240 0%,
+    #313D40 50%,
+    #38464B 80%,
+    #3C3E40 100% );
   
-  /* Radial gradient for smoother transitions */
+  /* Radial gradient for smoother transitions -- older version
   --background-gradient: radial-gradient(
     ellipse at 120% 120%,
     #1B3240 0%,
     #313D40 50%,
     #38464B 80%,
     #3C3E40 100%
-  );
+  );  */
 
   /* Text colors */
   --text-normal: var(--color-base-00);
