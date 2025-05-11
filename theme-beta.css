@@ -2208,6 +2208,6 @@ body.is-mobile.theme-dark .workspace-drawer.mod-right {
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 150% 150%;
-  background-position: 70% 40%; /* Move gradient center closer to center-right and a bit down */
+  background-position: 85% 65%; /* Move gradient center further right and down */
   background-repeat: no-repeat;
 }
