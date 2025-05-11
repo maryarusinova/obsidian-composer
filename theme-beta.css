@@ -595,12 +595,12 @@ body {
 	--background-secondary: #38464B;
 	--background-secondary-alt: #38464B;
 
-	--background-gradient: linear-gradient(
-		155deg,
-		#1B3240 0%,
-		#313D40 50%,
-		#38464B 80%,
-		#3C3E40 100%
+	--background-gradient: radial-gradient(
+		ellipse at 50% 160%,      /* Center far below the visible area */
+		#3C3E40 0%,               /* Outer color fills almost everything */
+		#38464B 85%,              /* Start transition very low */
+		#313D40 95%,              /* Sharper transition */
+		#1B3240 100%              /* Lightest at the very bottom */
 	);
 
 	--background-modifier-border: #3C3E40; /* #313D40; */
@@ -2043,11 +2043,11 @@ body.is-mobile.theme-dark {
   
   /* Radial gradient for smoother transitions */
   --background-gradient: radial-gradient(
-    ellipse at 120% 120%,
-    #1B3240 0%,
-    #313D40 50%,
-    #38464B 80%,
-    #3C3E40 100%
+    ellipse at 50% 160%,      /* Center far below the visible area */
+    #3C3E40 0%,               /* Outer color fills almost everything */
+    #38464B 85%,              /* Start transition very low */
+    #313D40 95%,              /* Sharper transition */
+    #1B3240 100%              /* Lightest at the very bottom */
   );
 
   /* Text colors */
@@ -2078,7 +2078,7 @@ body.is-mobile.theme-dark .nav-files-container {
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-position: 98% 97%;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 /* Add gradient to mobile UI elements -----*/
@@ -2087,7 +2087,7 @@ body.is-mobile.theme-dark .workspace-leaf-content {
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-position: 98% 97%;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
@@ -2096,7 +2096,7 @@ body.is-mobile.theme-dark .workspace-tab-container {
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-position: 98% 97%;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
   
