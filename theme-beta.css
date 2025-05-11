@@ -1205,13 +1205,13 @@ body:not(.is-mobile):not(.may4th--DisableNavHeaderAutoHide)
 	opacity: 1;
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace:not(.is-left-sidedock-open)
 	.sidebar-toggle-button.mod-left {
 	margin-top: 2px;
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace:not(.is-right-sidedock-open)
 	.sidebar-toggle-button.mod-right {
 	margin-top: 2px;
@@ -1231,7 +1231,7 @@ body:not(.is-phone)
 }
 
 /* tab for all area */
-body:not(.is-phone) .workspace {
+body:not(.is-mobile) .workspace {
 	background-color: var(--background-secondary);
 	background: var(--background-gradient);
 }
@@ -1259,7 +1259,7 @@ body .workspace {
 	padding: 0 4px;
 }
 
-body:not(.is-phone) .workspace-tab-container {
+body:not(.is-mobile) .workspace-tab-container {
 	background-color: var(--background-primary);
 	border-radius: var(--root-workspace-radius);
 	box-shadow: var(--root-workspace-shadow);
@@ -1347,12 +1347,12 @@ body:not(.is-mobile) .mod-root .workspace-tab-container {
 	background-color: var(--root-workspace-background);
 }
 
-body:not(.is-phone) .mod-root .workspace-tab-header-container {
+body:not(.is-mobile) .mod-root .workspace-tab-header-container {
 	padding: 0px 12px 4px 0px;
 	margin: var(--mod-root-header-margin);
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace
 	.mod-root
 	.workspace-tabs.mod-stacked
@@ -1364,7 +1364,7 @@ body:not(.is-phone)
 	box-shadow: none;
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace:is(.is-left-sidedock-open.is-right-sidedock-open)
 	.mod-root.workspace-split.mod-vertical {
 	margin-left: 0;
@@ -1372,7 +1372,7 @@ body:not(.is-phone)
 	padding-bottom: var(--root-workspace-padding-bottom);
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace:is(.is-left-sidedock-open):not(.is-right-sidedock-open)
 	.mod-root.workspace-split.mod-vertical {
 	margin-left: 0;
@@ -1380,7 +1380,7 @@ body:not(.is-phone)
 	padding-bottom: var(--root-workspace-padding-bottom);
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace:is(.is-right-sidedock-open):not(.is-left-sidedock-open)
 	.mod-root.workspace-split.mod-vertical {
 	margin-left: var(--root-workspace-margin-spacing);
@@ -1388,7 +1388,7 @@ body:not(.is-phone)
 	padding-bottom: var(--root-workspace-padding-bottom);
 }
 
-body:not(.is-phone)
+body:not(.is-mobile)
 	.workspace:not(.is-right-sidedock-open):not(.is-left-sidedock-open)
 	.mod-root.workspace-split.mod-vertical {
 	margin-left: var(--root-workspace-margin-spacing);
@@ -1453,13 +1453,13 @@ body:not(.is-mobile)
 
 /* markdown */
 /* file header title */
-body:not(.is-phone) .view-header-title-parent {
+body:not(.is-mobile) .view-header-title-parent {
 	width: auto;
 	opacity: 1;
 }
 
 @media (hover: hover) {
-	body:not(.is-phone)
+	body:not(.is-mobile)
 		.view-header-title-container:hover
 		.view-header-title-parent {
 		width: auto;
