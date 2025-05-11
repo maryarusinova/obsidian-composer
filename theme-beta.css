@@ -2060,11 +2060,11 @@ body.is-mobile.theme-dark {
 
   /* Nav/file list */
   --nav-item-color: var(--text-normal);
-  
+
   --dropdown-background: var(--background-primary-alt);
 }
 
-/* Mobile dark theme: apply gradient background to workspace with enhanced styling
+/* Mobile dark theme: apply gradient background to workspace with enhanced styling */
 body.is-mobile.theme-dark .workspace {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
@@ -2072,18 +2072,9 @@ body.is-mobile.theme-dark .workspace {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-}  */
+}
 
-/* Mobile dark theme: apply gradient background to workspace with enhanced styling */
-body.is-mobile.theme-dark .nav-files-container {
-	background: var(--background-gradient);
-	background-color: var(--background-secondary);
-	background-attachment: fixed;
-	background-size: 110% 110%;           /* fit within sidebar padding */
-	background-position: 120% 120%;         /* center inside the padding */
-	background-repeat: no-repeat;
-  }
-/* Add gradient to mobile UI elements -----
+/* Add gradient to mobile UI elements */
 body.is-mobile.theme-dark .workspace-leaf-content {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
@@ -2099,9 +2090,8 @@ body.is-mobile.theme-dark .workspace-tab-container {
   background-size: 100% 100%;
   background-position: center;
 }
-  */
 
-/* property pillbox */
+/* Add subtle gradient to mobile metadata container */
 body.is-mobile.theme-dark .metadata-container {
   background: var(--background-primary-alt);
   border-radius: 8px;
@@ -2160,10 +2150,10 @@ body.is-mobile.theme-dark .setting-item-control select {
   border: none;
 }
 
-/* Mobile buttons (from primary to primary-alt)*/
+/* Mobile buttons */
 body.is-mobile.theme-dark .button,
 body.is-mobile.theme-dark button:not(.danger):not(.accent):not(.special) {
-  background-color: var(--background-primary-alt);
+  background-color: var(--background-primary);
   color: var(--text-normal);
   border: none;
   transition: background 0.2s;
@@ -2212,3 +2202,11 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
   }
 }
 
+.nav-files-container {
+  background: var(--background-gradient);
+  background-color: var(--background-secondary);
+  background-attachment: fixed;
+  background-size: 110% 110%;           /* fit within sidebar padding */
+  background-position: 120% 120%;         /* center inside the padding */
+  background-repeat: no-repeat;
+}
