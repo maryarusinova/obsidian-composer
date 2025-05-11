@@ -595,14 +595,12 @@ body {
 	--background-secondary: #38464B;
 	--background-secondary-alt: #38464B;
 
-	--background-gradient: linear-gradient(
-		155deg,
+	--background-gradient: radial-gradient(
+		ellipse at 98% 97%,
 		#1B3240 0%,
-		#313D40,
-		#38464B
-		/* #1B363D 0%,
-		#313D40,
-		#38464B */
+		#313D40 50%,
+		#38464B 80%,
+		#3C3E40 100%
 	);
 
 	--background-modifier-border: #3C3E40; /* #313D40; */
@@ -2076,13 +2074,13 @@ body.is-mobile.theme-dark .workspace {
 
 /* Mobile dark theme: apply gradient background to workspace with enhanced styling */
 body.is-mobile.theme-dark .nav-files-container {
-	background: var(--background-gradient);
-	background-color: var(--background-secondary);
-	background-attachment: fixed;
-	background-size: 110% 110%;           /* fit within sidebar padding */
-	background-position: 120% 120%;         /* center inside the padding */
-	background-repeat: no-repeat;
-  }
+  background: var(--background-gradient);
+  background-color: var(--background-secondary);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: 98% 97%;
+  background-repeat: no-repeat;
+}
 /* Add gradient to mobile UI elements -----
 body.is-mobile.theme-dark .workspace-leaf-content {
   background: var(--background-gradient);
