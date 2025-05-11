@@ -1,6 +1,0 @@
-![[Screenshot 2025-05-03 at 15.38.10.png]]
-![[Screenshot 2025-05-01 at 19.49.18.png]]
-![[Screenshot 2025-05-01 at 19.49.11.png]]
-![[Screenshot 2025-05-01 at 19.33.24.png]]
-![[Screenshot 2025-05-01 at 19.51.13.png]]
-![[Screenshot 2025-05-01 at 19.53.53.png]]![[Screenshot 2025-05-01 at 19.51.25.png]]![[Screenshot 2025-05-01 at 19.50.51.png]]![[Screenshot 2025-05-01 at 19.44.19.png]]![[Screenshot 2025-05-01 at 19.42.40.png]]![[Screenshot 2025-05-01 at 19.42.17.png]]
