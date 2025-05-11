@@ -2069,7 +2069,7 @@ body.is-mobile.theme-dark .workspace {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
-  background-size: 150% 150%;
+  background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2079,7 +2079,7 @@ body.is-mobile.theme-dark .workspace-leaf-content {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
-  background-size: 150% 150%;
+  background-size: 80% 80%;
   background-position: center;
 }
 
@@ -2087,7 +2087,7 @@ body.is-mobile.theme-dark .workspace-tab-container {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
-  background-size: 150% 150%;
+  background-size: 80% 80%;
   background-position: center;
 }
 
@@ -2207,7 +2207,7 @@ body.is-mobile.theme-dark .workspace-drawer.mod-right {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
-  background-size: 150% 150%;
-  background-position: 85% 65%; /* Move gradient center further right and down */
+  background-size: 80% 80%;         /* smaller radius */
+  background-position: 85% 65%;     /* keep the center where you want it */
   background-repeat: no-repeat;
 }
