@@ -608,20 +608,7 @@ body {
 	--background-modifier-border: #3C3E40; /* #313D40; */
 	--background-modifier-hover: #38464B66; /* original: #313D40; *** #38464B (solid, matches secondary) */
 	--background-modifier-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-/* old base colors (dublicates)
-	--color-base-00: #1B363D;
-	--color-base-05: #313D40;
-	--color-base-10: #38464B;
-	--color-base-20: #38464B;
-	--color-base-25: #38464B;
-	--color-base-30: #38464B;
-	--color-base-35: #F2C6B6;
-	--color-base-40: #F2A285;
-	--color-base-50: #F29472;
-	--color-base-60: #F26B5E;
-	--color-base-70: #F26B5E;
-	--color-base-100: #F2C6B6; */
-	
+
 	--color-base-00: #F0F1F2;   /* lightest gray (backgrounds, highlights) */
 	--color-base-05: #F2C6B6;   /* light peach (secondary background/accent) */
 	--color-base-10: #F2A285;   /* peach-orange */
@@ -1909,7 +1896,7 @@ body.may4th--ParagraphIndent div.markdown-reading-view div.mermaid {
 /* Primary/neutral button */
 .theme-dark .button,
 .theme-dark button:not(.danger):not(.accent):not(.special) {
-  background-color: var(--background-primary); /* rest state: slate blue-gray */
+  background-color: var(--background-primary-alt); /* ! changed to alt ! rest state: slate blue-gray */
   color: var(--text-normal);            /* very light gray text */
   border: none;
   transition: background 0.2s;
