@@ -671,6 +671,8 @@ body {
 
 	--nav-button-container-bg: rgba(141, 166, 166, 0.03);
 	--header-active-bg: rgba(141, 166, 166, 0.05);
+
+	--dropdown-background: var(--background-primary-alt);
 }
 
 /* ---------- stuff ---------- */
@@ -2056,6 +2058,8 @@ body.is-mobile.theme-dark {
 
   /* Nav/file list */
   --nav-item-color: var(--text-normal);
+
+  --dropdown-background: var(--background-primary-alt);
 }
 
 /* Mobile dark theme: apply gradient background to workspace */
