@@ -2211,3 +2211,7 @@ body.is-mobile.theme-dark .workspace-drawer.mod-right {
   background-position: 98% 10%; /* push center to the far edge and near the top */
   background-repeat: no-repeat;
 }
+
+body.is-mobile.theme-dark .workspace-drawer-header {
+  background: transparent !important;
+}
