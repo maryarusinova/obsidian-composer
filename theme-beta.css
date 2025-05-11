@@ -2029,10 +2029,10 @@ body.is-mobile.theme-dark {
   --color-base-10: #F2A285;
   --color-base-20: #F29472;
   --color-base-25: #F26B5E;
-  --color-base-30: #38464b; /* #D9AD2B; */
+  --color-base-30: #38464b;
   --color-base-35: #3C3E40;
   --color-base-40: #313D40;
-  --color-base-50: #38464B; /* #38464B; */
+  --color-base-50: #38464B;
   --color-base-60: #1B3240;
   --color-base-70: #1B363D;
   --color-base-100: #593325;
@@ -2042,7 +2042,14 @@ body.is-mobile.theme-dark {
   --background-primary-alt: #313D40;
   --background-secondary: #38464B;
   --background-secondary-alt: #38464B;
-  --background-gradient: linear-gradient(155deg, #1B3240 0%, #313D40, #38464B);
+  
+  /* Enhanced gradient with better color stops and angle */
+  --background-gradient: linear-gradient(
+    155deg,
+    #1B3240 0%,
+    #313D40 40%,
+    #38464B 100%
+  );
 
   /* Text colors */
   --text-normal: var(--color-base-00);
@@ -2056,38 +2063,60 @@ body.is-mobile.theme-dark {
   --dropdown-background: var(--background-primary-alt);
 }
 
-/* Mobile dark theme: apply gradient background to workspace */
+/* Mobile dark theme: apply gradient background to workspace with enhanced styling */
 body.is-mobile.theme-dark .workspace {
+  background: var(--background-gradient);
+  background-color: var(--background-secondary);
+  background-attachment: fixed; /* Keep gradient fixed while scrolling */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Add gradient to mobile UI elements */
+body.is-mobile.theme-dark .workspace-leaf-content {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
 }
 
-/* Mobile pillbox property settings */
+body.is-mobile.theme-dark .workspace-tab-container {
+  background: var(--background-gradient);
+  background-color: var(--background-secondary);
+}
+
+/* Add subtle gradient to mobile metadata container */
 body.is-mobile.theme-dark .metadata-container {
-  background-color: var(--background-primary-alt);
+  background: linear-gradient(
+    155deg,
+    var(--background-primary-alt) 0%,
+    var(--background-primary) 100%
+  );
   border-radius: 8px;
   border: 1px solid var(--background-modifier-border);
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   padding: 0.5em 1em;
   color: var(--text-normal);
 }
+
 body.is-mobile.theme-dark .metadata-property {
   margin: 4px 0;
   padding: 8px;
   border-radius: 6px;
-  background-color: var(--background-primary-alt);
+  background-color: var(--background-primary);
 }
+
 body.is-mobile.theme-dark .metadata-property-key {
   padding: 6px 8px;
   border-radius: 6px;
   background-color: var(--background-primary-alt);
   font-size: 0.95em;
 }
+
 body.is-mobile.theme-dark .metadata-property-value {
   padding: 6px 8px;
   border-radius: 6px;
-  background-color: var(--background-primary-alt);
+  background-color: var(--background-primary);
 }
+
 body.is-mobile.theme-dark .metadata-property-key-input,
 body.is-mobile.theme-dark .metadata-input {
   padding: 8px;
@@ -2096,6 +2125,7 @@ body.is-mobile.theme-dark .metadata-input {
   font-size: 0.95em;
   color: var(--text-normal);
 }
+
 body.is-mobile.theme-dark .metadata-add-button {
   margin-top: 8px;
   padding: 8px 12px;
@@ -2103,6 +2133,63 @@ body.is-mobile.theme-dark .metadata-add-button {
   background-color: var(--background-primary-alt);
   color: var(--text-normal);
 }
+
+/* Mobile UI Elements */
+body.is-mobile.theme-dark input,
+body.is-mobile.theme-dark textarea,
+body.is-mobile.theme-dark select,
+body.is-mobile.theme-dark .dropdown,
+body.is-mobile.theme-dark .setting-item-control input,
+body.is-mobile.theme-dark .setting-item-control select {
+  background-color: var(--background-primary-alt) !important;
+  color: var(--text-normal) !important;
+  border: none;
+}
+
+/* Mobile buttons */
+body.is-mobile.theme-dark .button,
+body.is-mobile.theme-dark button:not(.danger):not(.accent):not(.special) {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  border: none;
+  transition: background 0.2s;
+}
+
+body.is-mobile.theme-dark .button:hover,
+body.is-mobile.theme-dark button:not(.danger):not(.accent):not(.special):hover {
+  background-color: var(--background-modifier-hover);
+}
+
+/* Mobile accent/destructive buttons */
+body.is-mobile.theme-dark .button.danger,
+body.is-mobile.theme-dark button.danger,
+body.is-mobile.theme-dark .button.accent,
+body.is-mobile.theme-dark button.accent {
+  background-color: var(--color-accent) !important;
+  color: var(--text-normal) !important;
+}
+
+/* Mobile toggles */
+body.is-mobile.theme-dark .checkbox-container,
+body.is-mobile.theme-dark .setting-item-toggle {
+  background-color: var(--color-base-40) !important;
+  border: 1.5px solid var(--color-base-50) !important;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.07), inset 0 0 1px rgba(0,0,0,0.21) !important;
+}
+
+body.is-mobile.theme-dark .checkbox-container.is-enabled,
+body.is-mobile.theme-dark .setting-item-toggle.is-enabled {
+  background-color: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+}
+
+body.is-mobile.theme-dark .setting-item-toggle::after,
+body.is-mobile.theme-dark .checkbox-container .checkbox:after {
+  border: 2px solid var(--background-primary) !important;
+  box-sizing: border-box;
+}
+
+/* Mobile hover states */
 @media (hover: hover) {
   body.is-mobile.theme-dark .metadata-property:hover,
   body.is-mobile.theme-dark .metadata-property-key:hover,
@@ -2110,19 +2197,3 @@ body.is-mobile.theme-dark .metadata-add-button {
     background-color: var(--background-modifier-hover);
   }
 }
-
-.theme-dark .button,
-.theme-dark button:not(.danger):not(.accent):not(.special) {
-  background-color: var(--background-primary); 
-  color: var(--text-normal);
-  border: none;
-  transition: background 0.2s;
-}
-
-
-body.is-mobile.theme-dark .metadata-property {
-  background-color: var(--background-primary);
-}
-body.is-mobile.theme-dark .metadata-property-value {
-  background-color: var(--background-primary);
-} 
