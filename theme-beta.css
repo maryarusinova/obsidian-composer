@@ -2202,16 +2202,11 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
   }
 }
 
-body.is-mobile.theme-dark .workspace-drawer.mod-left,
-body.is-mobile.theme-dark .workspace-drawer.mod-right {
+.workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
   background-size: 90% 95%;           /* fit within sidebar padding */
   background-position: 6% 2%;         /* center inside the padding */
   background-repeat: no-repeat;
-}
-
-body.is-mobile.theme-dark .workspace-drawer-header {
-  background: var(--background-primary-alt) !important;
 }
