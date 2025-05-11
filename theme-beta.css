@@ -2045,7 +2045,7 @@ body.is-mobile.theme-dark {
   
   /* Radial gradient for smoother transitions */
   --background-gradient: radial-gradient(
-    ellipse at 60% 40%,
+    ellipse at 98% 97%,
     #1B3240 0%,
     #313D40 50%,
     #38464B 80%,
@@ -2202,7 +2202,7 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
   }
 }
 
-.workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container {
+.nav-files-container {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
