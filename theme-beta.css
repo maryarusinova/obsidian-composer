@@ -2080,7 +2080,7 @@ body.is-mobile.theme-dark .workspace {
   background-repeat: no-repeat;
 }  */
 
-/* Mobile dark theme: apply gradient background to workspace with enhanced styling */
+/* Mobile dark theme: apply gradient background to workspace with enhanced styling 
 body.is-mobile.theme-dark .nav-files-container {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
@@ -2088,7 +2088,8 @@ body.is-mobile.theme-dark .nav-files-container {
   background-size: 100% 100%;
   background-position: 98% 97%;
   background-repeat: no-repeat;
-}
+} */
+ 
 /* Add gradient to mobile UI elements -----*/
 body.is-mobile.theme-dark .workspace-leaf-content {
   background: var(--background-gradient);
