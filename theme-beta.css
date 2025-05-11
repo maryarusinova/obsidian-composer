@@ -2135,5 +2135,13 @@ body.is-mobile.theme-dark .nav-files-container > .nav-header {
   background: transparent !important;
   background-color: transparent !important;
   box-shadow: none !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+body.is-mobile.theme-dark .workspace-drawer-header,
+body.is-mobile.theme-dark .nav-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
