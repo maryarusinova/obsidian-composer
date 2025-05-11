@@ -2045,7 +2045,7 @@ body.is-mobile.theme-dark {
   
   /* Radial gradient for smoother transitions */
   --background-gradient: radial-gradient(
-    ellipse at 110% 120%,
+    ellipse at 120% 120%,
     #1B3240 0%,
     #313D40 50%,
     #38464B 80%,
@@ -2206,7 +2206,7 @@ body.is-mobile.theme-dark .checkbox-container .checkbox:after {
   background: var(--background-gradient);
   background-color: var(--background-secondary);
   background-attachment: fixed;
-  background-size: 100% 100%;           /* fit within sidebar padding */
-  background-position: 110% 120%;         /* center inside the padding */
+  background-size: 110% 110%;           /* fit within sidebar padding */
+  background-position: 120% 120%;         /* center inside the padding */
   background-repeat: no-repeat;
 }
