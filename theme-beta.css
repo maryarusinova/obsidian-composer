@@ -2042,10 +2042,10 @@ body.is-mobile.theme-dark {
   --color-base-10: #F2A285;
   --color-base-20: #F29472;
   --color-base-25: #F26B5E;
-  --color-base-30: #D9AD2B;
+  --color-base-30: #38464b /* #D9AD2B; */
   --color-base-35: #3C3E40;
   --color-base-40: #313D40;
-  --color-base-50: #38464B;
+  --color-base-50: #38464B; /* #38464B; */
   --color-base-60: #1B3240;
   --color-base-70: #1B363D;
   --color-base-100: #593325;
