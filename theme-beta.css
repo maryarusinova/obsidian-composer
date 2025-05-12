@@ -480,23 +480,6 @@ body {
 /* ---- Coruscant Morning (light) ---- */
 
 .theme-light {
-  /* Main backgrounds */
-  --background-primary:      var(--color-base-00); /* #F2C6B6; warm peach, main workspace bg */
-  --background-primary-alt:  var(--color-base-05); /* #F2E9D8; lighter, for cards/panels/modals */
-  --background-secondary:    var(--color-base-20); /* #8DA6A6; muted teal, sidebar/nav, gradient stop */
-  --background-secondary-alt: var(--color-base-10); /* #F2B47E; soft gold, for highlights/selection */
-
-  /* Main workspace gradient */
-  --background-gradient: linear-gradient(to bottom,  #F2C6B6 0%, #8DA6A6 100%); /* 135deg */
-
-  /* Sidebar gradient (desktop & mobile) */
-  --sidebar-gradient: linear-gradient(to bottom,  #F2C6B6 0%, #8DA6A6 100%);
-
-  /* background-modifier-border */
-  --background-modifier-border: var(--color-base-22); /* 20 // #8DA6A6; */
-  /*--background-modifier-hover: var(--color-base-25);  #D9AE30; */
-  --background-modifier-box-shadow: var(--color-base-22); /* 30 // #313D40; */
-
   /* color bases for light theme */
   --color-base-00: #F2C6B6;   /* main background, warm peach */
   --color-base-05: #F2E9D8;   /* card/panel background, lighter peach */
@@ -514,6 +497,23 @@ body {
   --color-base-70: #F2E9D8;   /* very light peach, highlight/alt */
   --color-base-100: #1B3240;  /* structural, shadow, strong contrast */
   
+  /* Main backgrounds */
+  --background-primary:      var(--color-base-00); /* #F2C6B6; warm peach, main workspace bg */
+  --background-primary-alt:  var(--color-base-05); /* #F2E9D8; lighter, for cards/panels/modals */
+  --background-secondary:    var(--color-base-20); /* #8DA6A6; muted teal, sidebar/nav, gradient stop */
+  --background-secondary-alt: var(--color-base-10); /* #F2B47E; soft gold, for highlights/selection */
+
+  /* Main workspace gradient */
+  --background-gradient: linear-gradient(to bottom,  #F2C6B6 0%, #8DA6A6 100%); /* 135deg */
+
+  /* Sidebar gradient (desktop & mobile) */
+  --sidebar-gradient: linear-gradient(to bottom,  #F2C6B6 0%, #8DA6A6 100%);
+
+  /* background-modifier-border */
+  --background-modifier-border: var(--color-base-22); /* 20 // #8DA6A6; */
+  /*--background-modifier-hover: var(--color-base-25);  #D9AE30; */
+  --background-modifier-box-shadow: var(--color-base-22); /* 30 // #313D40; */
+
 
   /* Cards, modals, panels */
   --card-bg:                 var(--color-base-05); /* #F2E9D8; */
@@ -561,6 +561,17 @@ body {
   /* Structural (for subtle outlines, shadows, etc) */
   --structural:              var(--color-base-100); /* #1B3240; */
 }
+
+/* ---- Coruscant Morning (light) MOBILE ---- */
+
+body.is-mobile.theme-light {
+	/* Workspace background gradient */
+	--background-gradient: linear-gradient(to bottom, #F2C6B6 0%, #8DA6A6 100%);
+  
+	/* Sidebar gradient */
+	--sidebar-gradient: linear-gradient(to bottom, #F2C6B6 0%, #8DA6A6 100%);
+  }
+  
 
 /* ---- Coruscant Evening (dark) ---- */
 
