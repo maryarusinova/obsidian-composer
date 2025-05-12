@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Preview - Dark & Light</title>
+    <style>
+        /* Dark Theme */
+        .dark-theme {
+            --color-base-00: #1B363D;   /* main background */
+            --color-base-05: #313D40;   /* card background */
+            --color-base-10: #D9AD2B;   /* gold accent, links, buttons */
+            --color-base-20: #F29472;   /* muted orange, warning */
+            --color-base-25: #F26B5E;   /* coral, error */
+            --color-base-30: #38464B;   /* slate blue-gray, border */
+            --color-base-35: #3C3E40;   /* dark neutral gray */
+            --color-base-40: #1B3240;   /* deep blue, sidebar */
+            --color-base-50: #F2A285;   /* peach-orange, selection */
+            --color-base-60: #F2C6B6;   /* peach, secondary accent */
+            --color-base-70: #F0F1F2;   /* very light gray, highlight */
+            --color-base-100: #593325;  /* deep brown, strong contrast */
+        }
+
+        /* Light Theme */
+        .light-theme {
+            --color-base-00: #F2E9D8;   /* main background */
+            --color-base-01: #AFCAC6;   /* lighter teal for sidebar/nav, morning haze */
+            --color-base-05: #F6E3D0;   /* lighter card/panel background */
+            --color-base-10: #D9AE30;   /* gold accent, links, buttons, borders */
+            --color-base-20: #F26B5E;   /* coral, error, accent */
+            --color-base-30: #313D40;   /* deep blue-gray, primary text */
+            --color-base-40: #593325;   /* deep brown, secondary text */
+            --color-base-50: #F2B47E;   /* header bg, highlight, border */
+            --color-base-structural: #1B3240; /* shadow, outline, sibling to dark theme */
+            --color-link-hover: #8DA6A6; /* muted teal for link hover */
+        }
+
+        .light-theme .sidebar {
+            background-color: var(--color-base-01);
+        }
+        .light-theme .nav-link,
+        .light-theme .sidebar h3 {
+            color: var(--color-base-30);
+        }
+        .light-theme .nav-link:hover {
+            color: var(--color-link-hover);
+        }
+        .light-theme .main-content {
+            background: linear-gradient(135deg, var(--color-base-00) 0%, var(--color-base-01) 100%);
+            color: var(--color-base-30);
+        }
+        .light-theme .card {
+            background-color: var(--color-base-05);
+            color: var(--color-base-30);
+            border: 1px solid var(--color-base-50);
+            box-shadow: 0 2px 8px 0 rgba(27,50,64,0.08);
+        }
+        .light-theme h1, .light-theme h2, .light-theme h3 {
+            color: var(--color-base-40);
+        }
+        .light-theme .button {
+            background-color: var(--color-base-50);
+            color: var(--color-base-30);
+            border: none;
+            box-shadow: 0 1px 4px 0 rgba(27,50,64,0.10);
+        }
+        .light-theme .button:active {
+            box-shadow: 0 0 0 2px rgba(27,50,64,0.10);
+        }
+        .light-theme .button:hover {
+            background-color: #F2B47E;
+            box-shadow: 0 2px 8px 0 rgba(141,166,166,0.12);
+            filter: brightness(0.97);
+        }
+        .light-theme .highlight {
+            background-color: var(--color-base-50);
+            color: var(--color-base-30);
+        }
+        .light-theme .warning {
+            background-color: var(--color-base-50);
+            color: var(--color-base-40);
+            border-left: 3px solid var(--color-base-10);
+            padding-left: 0.75rem;
+        }
+        .light-theme .error {
+            background-color: #F2845C;
+            color: var(--color-base-40);
+            border-left: 3px solid #F26B5E;
+            padding-left: 0.75rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        .themes-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .theme-section {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .theme-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .dark-theme .theme-section h2 {
+            background-color: var(--color-base-40);
+            color: var(--color-base-70);
+        }
+
+        .light-theme .theme-section h2 {
+            background-color: var(--color-base-40);
+            color: var(--color-base-70);
+        }
+
+        .container {
+            display: flex;
+            min-height: calc(100vh - 100px);
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: var(--color-base-40);
+            padding: 1rem;
+            border-right: 1px solid var(--color-base-30);
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            background-color: var(--color-base-00);
+            color: var(--color-base-70);
+        }
+
+        .card {
+            background-color: var(--color-base-05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--color-base-30);
+        }
+
+        .nav-link {
+            color: var(--color-base-50);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--color-base-10);
+        }
+
+        .button {
+            background-color: var(--color-base-10);
+            color: var(--color-base-00);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .warning {
+            color: var(--color-base-20);
+            padding: 0.5rem;
+            border-left: 3px solid var(--color-base-20);
+            margin: 1rem 0;
+        }
+
+        .error {
+            color: var(--color-base-25);
+            padding: 0.5rem;
+            border-left: 3px solid var(--color-base-25);
+            margin: 1rem 0;
+        }
+
+        h1, h2, h3 {
+            color: var(--color-base-100);
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            background-color: var(--color-base-70);
+            color: var(--color-base-00);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="themes-container">
+        <!-- Dark Theme -->
+        <div class="theme-section dark-theme">
+            <h2>Dark Theme</h2>
+            <div class="container">
+                <aside class="sidebar">
+                    <h3>Navigation</h3>
+                    <nav>
+                        <a href="#" class="nav-link">Dashboard</a>
+                        <a href="#" class="nav-link">Notes</a>
+                        <a href="#" class="nav-link">Settings</a>
+                        <a href="#" class="nav-link">Profile</a>
+                    </nav>
+                </aside>
+
+                <main class="main-content">
+                    <h1>Dark Theme Preview</h1>
+                    
+                    <div class="card">
+                        <h2>Sample Card</h2>
+                        <p>This is a sample card with some content. Notice how the colors work together to create a cohesive dark theme.</p>
+                        <button class="button">Click Me</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>UI Elements</h2>
+                        <p>Here are some <span class="highlight">highlighted text</span> examples.</p>
+                        <div class="warning">This is a warning message</div>
+                        <div class="error">This is an error message</div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Light Theme -->
+        <div class="theme-section light-theme">
+            <h2>Light Theme</h2>
+            <div class="container">
+                <aside class="sidebar">
+                    <h3>Navigation</h3>
+                    <nav>
+                        <a href="#" class="nav-link">Dashboard</a>
+                        <a href="#" class="nav-link">Notes</a>
+                        <a href="#" class="nav-link">Settings</a>
+                        <a href="#" class="nav-link">Profile</a>
+                    </nav>
+                </aside>
+
+                <main class="main-content">
+                    <h1>Light Theme Preview</h1>
+                    
+                    <div class="card">
+                        <h2>Sample Card</h2>
+                        <p>This is a sample card with some content. Notice how the colors work together to create a cohesive light theme.</p>
+                        <button class="button">Click Me</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>UI Elements</h2>
+                        <p>Here are some <span class="highlight">highlighted text</span> examples.</p>
+                        <div class="warning">This is a warning message</div>
+                        <div class="error">This is an error message</div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -477,105 +477,65 @@ body {
 	--side-dock-actions-border-color: transparent;
 } */
 
-/* ---- Coruscant (light) ---- */
+/* ---- Coruscant Morning (light) ---- */
 .theme-light {
-	--accent-h: 12;
-	--accent-s: 31%;
-	--accent-l: 60%;
+  /* Main backgrounds */
+  --background-primary:      #F2C6B6; /* warm peach, main workspace bg */
+  --background-primary-alt:  #F2E9D8; /* lighter, for cards/panels/modals */
+  --background-secondary:    #8DA6A6; /* muted teal, sidebar/nav, gradient stop */
+  --background-secondary-alt:#F2B47E; /* soft gold, for highlights/selection */
 
-	--background-primary: rgb(243, 237, 233);
-	--background-primary-alt: rgb(238, 230, 225);
-	--background-secondary: rgb(232, 223, 217);
-	--background-secondary-alt: rgb(225, 215, 208);
+  /* Main workspace gradient */
+  --background-gradient: linear-gradient(135deg, #8DA6A6 0%, #F2C6B6 100%);
 
-	--background-gradient: linear-gradient(
-		rgb(217, 224, 227),
-		rgb(235, 215, 210)
-	);
-	--background-modifier-border: hsla(25, 20%, 70%, 0.4);
+  /* Sidebar gradient (desktop & mobile) */
+  --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
 
-	/* text */
-	--color-base-00: #f8f4f0;
-	--color-base-05: #f3ece6;
-	--color-base-10: #eee6df;
-	--color-base-20: #e6dcd3;
-	--color-base-25: #d8ccc2;
-	--color-base-30: #c8b9af;
-	--color-base-35: #b6a79d;
-	--color-base-40: #a3958c;
-	--color-base-50: #8a7e76;
-	--color-base-60: #6b625b;
-	--color-base-70: #554d47;
-	--color-base-100: #3a3330;
-	--bold-color: #2d3748;
-	--bold-modifier: 200;
+  /* Cards, modals, panels */
+  --card-bg:                 #F2E9D8;
+  --modal-bg:                #F2E9D8;
 
-	/* title */
-	--h1-color: #2d3748;
-	--h2-color: #4a556b;
-	--h3-color: #66788d;
-	--h4-color: #7f8a9b;
-	--h5-color: #9aa5b5;
-	--h6-color: #808080;
-	--h1-indicator-color: var(--h1-color);
-	--h2-indicator-color: var(--h2-color);
-	--h3-indicator-color: var(--h3-color);
-	--h4-indicator-color: var(--h4-color);
-	--h5-indicator-color: var(--h5-color);
-	--h6-indicator-color: var(--h6-color);
+  /* Borders & shadows */
+  --border-color:            #F2B47E;
+  --border-structural:       rgba(27,50,64,0.08);
+  --shadow-color:            rgba(27,50,64,0.10);
 
-	/* inline code */
-	--code-normal: #eb5757;
-	--code-border-color: transparent;
-	--inline-code-normal: #eb5757;
-	--inline-code-background: hsla(31, 41%, 90%, 0.6);
+  /* Text */
+  --text-normal:             #313D40;
+  --text-accent:             #D9AE30;
+  --text-muted:              #593325;
+  --text-faint:              #8DA6A6;
 
-	/* quote */
-	--blockquote-border-color: hsl(25, 20%, 70%);
-	--blockquote-background-color: rgba(237, 228, 222, 0.811);
-	--blockquote-color: hsl(25, 20%, 30%);
+  /* Headings */
+  --h1-color:                #593325;
+  --h2-color:                #D9AE30;
+  --h3-color:                #8DA6A6;
 
-	/* codeblock */
-	--codeblock-background: rgba(234, 223, 215, 0.749);
-	--codeblock-caret-color: hsl(25, 20%, 30%);
-	--codeblock-border-radius: 8px;
+  /* Links */
+  --link-color:              #D9AE30;
+  --link-hover:              #8DA6A6;
 
-	/* text highlight */
-	--text-highlight-background: rgba(248, 227, 217, 0.9);
-	--text-highlight-border-color: rgb(167, 98, 64);
-	--text-highlight-color: rgb(102, 80, 63);
-	--text-highlight-border-radius: 4px;
+  /* Buttons */
+  --button-bg:               #F2B47E;
+  --button-bg-hover:         #F2B47E;
+  --button-shadow:           0 2px 8px 0 rgba(141,166,166,0.12);
+  --button-text:             #313D40;
 
-	/* basic color */
-	--color-red-rgb: 174, 62, 76;
-	--color-blue-rgb: 74, 85, 107;
-	--color-purple-rgb: 94, 72, 146;
-	--color-cyan-rgb: 52, 136, 152;
-	--color-blue-rgb: 95, 164, 218;
-	--color-orange-rgb: 184, 110, 51;
-	--color-green-rgb: 62, 132, 98;
-	--color-yellow-rgb: 191, 143, 63;
-	--color-pink-rgb: 184, 92, 132;
+  /* Selection & highlights */
+  --selection-bg:            #F2C6B6;
+  --highlight-bg:            #F2B47E;
+  --highlight-text:          #313D40;
 
-	/* callout */
-	--callout-bug: var(--color-red-rgb);
-	--callout-default: var(--color-blue-rgb);
-	--callout-error: 158, 48, 57;
-	--callout-example: var(--color-purple-rgb);
-	--callout-fail: var(--color-red-rgb);
-	--callout-important: var(--color-cyan-rgb);
-	--callout-info: var(--color-blue-rgb);
-	--callout-question: var(--color-orange-rgb);
-	--callout-success: var(--color-green-rgb);
-	--callout-summary: var(--color-cyan-rgb);
-	--callout-tip: var(--color-cyan-rgb);
-	--callout-todo: var(--color-blue-rgb);
-	--callout-warning: 191, 127, 63;
-	--callout-quote: 158, 158, 158;
+  /* Warnings & errors */
+  --warning-bg:              #F2B47E;
+  --warning-text:            #593325;
+  --warning-border:          #D9AE30;
+  --error-bg:                #F2845C;
+  --error-text:              #593325;
+  --error-border:            #F26B5E;
 
-	/* customize */
-	--nav-button-container-bg: rgba(31, 34, 37, 0.03);
-	--header-active-bg: rgba(31, 34, 37, 0.03);
+  /* Structural (for subtle outlines, shadows, etc) */
+  --structural:              #1B3240;
 }
 
 /* ---- Coruscant (dark) ---- */

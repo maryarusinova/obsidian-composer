@@ -1,0 +1,29 @@
+:root {
+    --color-base-00: #F0F1F2;   /* background */
+    --color-base-05: #F2C6B6;   /* card background, subtle highlight */
+    --color-base-10: #E6A84A;   /* gold accent, links, buttons */
+    --color-base-20: #F29472;   /* muted orange, warning, accent */
+    --color-base-25: #F26B5E;   /* coral, error, accent */
+    --color-base-30: #A6A1A1;   /* light blue-gray, border, UI */
+    --color-base-35: #BFBFBF;   /* light gray, secondary background */
+    --color-base-40: #2F3240;   /* urban blue-gray, sidebar, nav */
+    --color-base-50: #3B3C59;   /* muted purple/blue, selection */
+    --color-base-60: #A67D03;   /* urban gold, secondary accent */
+    --color-base-70: #D0D0DD;   /* pale blue-gray, highlight */
+    --color-base-100: #593325;  /* deep brown, strong contrast */
+  }
+
+  +-------------------------------------------------------------+
+|                    [--color-base-00]                        |
+|  +-------------------+   +------------------------------+   |
+|  |  Sidebar          |   |   Card/Note                  |   |
+|  |  [--color-base-40]|   |  [--color-base-05]           |   |
+|  |                   |   |  Title [--color-base-10]     |   |
+|  |  Nav Link         |   |  Body text [--color-base-100]|   |
+|  |  [--color-base-50]|   |  Accent [--color-base-20/25] |   |
+|  +-------------------+   +------------------------------+   |
+|                                                             |
+|  Button [--color-base-10]   Warning [--color-base-20]       |
+|  Error  [--color-base-25]   Border  [--color-base-30]       |
+|  Selection [--color-base-50] Highlight [--color-base-70]    |
++-------------------------------------------------------------+
