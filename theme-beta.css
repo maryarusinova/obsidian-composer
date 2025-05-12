@@ -479,7 +479,7 @@ body {
 
 /* ---- Coruscant Morning (light) color bases ---- */
 :root {
-  --color-base-00: #F2E9D8;   /* lightest background */
+  --color-base-00: #D0D0DD;   /* before #F2E9D8 lightest background */
   --color-base-01: #8DA6A6;   /* teal accent/gradient */
   --color-base-05: #F2C6B6;   /* peach background */
   --color-base-10: #F2B47E;   /* gold highlight */
