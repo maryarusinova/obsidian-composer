@@ -477,62 +477,75 @@ body {
 	--side-dock-actions-border-color: transparent;
 } */
 
+/* ---- Coruscant Morning (light) color bases ---- */
+:root {
+  --color-base-00: #F2E9D8;   /* lightest background */
+  --color-base-01: #8DA6A6;   /* teal accent/gradient */
+  --color-base-05: #F2C6B6;   /* peach background */
+  --color-base-10: #F2B47E;   /* gold highlight */
+  --color-base-20: #D9AE30;   /* gold accent */
+  --color-base-30: #313D40;   /* deep blue-gray, primary text */
+  --color-base-40: #593325;   /* deep brown, secondary text */
+  --color-base-50: #F26B5E;   /* coral, error border */
+  --color-base-60: #F2845C;   /* soft coral, error bg */
+}
+
 /* ---- Coruscant Morning (light) ---- */
 .theme-light {
   /* Main backgrounds */
-  --background-primary:      #F2C6B6; /* warm peach, main workspace bg */
-  --background-primary-alt:  #F2E9D8; /* lighter, for cards/panels/modals */
-  --background-secondary:    #8DA6A6; /* muted teal, sidebar/nav, gradient stop */
-  --background-secondary-alt:#F2B47E; /* soft gold, for highlights/selection */
+  --background-primary:      var(--color-base-05); /* warm peach, main workspace bg */
+  --background-primary-alt:  var(--color-base-00); /* lighter, for cards/panels/modals */
+  --background-secondary:    var(--color-base-01); /* muted teal, sidebar/nav, gradient stop */
+  --background-secondary-alt:var(--color-base-10); /* soft gold, for highlights/selection */
 
   /* Main workspace gradient */
-  --background-gradient: linear-gradient(135deg, #8DA6A6 0%, #F2C6B6 100%);
+  --background-gradient: linear-gradient(135deg, var(--color-base-01) 0%, var(--color-base-05) 100%);
 
   /* Sidebar gradient (desktop & mobile) */
-  --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
+  --sidebar-gradient: linear-gradient(to top, var(--color-base-01) 0%, var(--color-base-05) 100%);
 
   /* Cards, modals, panels */
-  --card-bg:                 #F2E9D8;
-  --modal-bg:                #F2E9D8;
+  --card-bg:                 var(--color-base-00);
+  --modal-bg:                var(--color-base-00);
 
   /* Borders & shadows */
-  --border-color:            #F2B47E;
+  --border-color:            var(--color-base-10);
   --border-structural:       rgba(27,50,64,0.18);
-  --shadow-color:            rgba(27,50,64,0.24);
+  --shadow-color:            rgba(27,50,64,0.18);
 
   /* Text */
-  --text-normal:             #313D40;
-  --text-accent:             #D9AE30;
-  --text-muted:              #593325;
-  --text-faint:              #8DA6A6;
+  --text-normal:             var(--color-base-30);
+  --text-accent:             var(--color-base-20);
+  --text-muted:              var(--color-base-40);
+  --text-faint:              var(--color-base-01);
 
   /* Headings */
-  --h1-color:                #593325;
-  --h2-color:                #D9AE30;
-  --h3-color:                #8DA6A6;
+  --h1-color:                var(--color-base-40);
+  --h2-color:                var(--color-base-20);
+  --h3-color:                var(--color-base-01);
 
   /* Links */
-  --link-color:              #D9AE30;
-  --link-hover:              #8DA6A6;
+  --link-color:              var(--color-base-20);
+  --link-hover:              var(--color-base-01);
 
   /* Buttons */
-  --button-bg:               #F2B47E;
-  --button-bg-hover:         #F2B47E;
-  --button-shadow:           0 2px 8px 0 rgba(141,166,166,0.12);
-  --button-text:             #313D40;
+  --button-bg:               var(--color-base-10);
+  --button-bg-hover:         var(--color-base-10);
+  --button-shadow:           0 2px 8px 0 rgba(141,166,166,0.18);
+  --button-text:             var(--color-base-30);
 
   /* Selection & highlights */
-  --selection-bg:            #F2C6B6;
-  --highlight-bg:            #F2B47E;
-  --highlight-text:          #313D40;
+  --selection-bg:            var(--color-base-05);
+  --highlight-bg:            var(--color-base-10);
+  --highlight-text:          var(--color-base-30);
 
   /* Warnings & errors */
-  --warning-bg:              #F2B47E;
-  --warning-text:            #593325;
-  --warning-border:          #D9AE30;
-  --error-bg:                #F2845C;
-  --error-text:              #593325;
-  --error-border:            #F26B5E;
+  --warning-bg:              var(--color-base-10);
+  --warning-text:            var(--color-base-40);
+  --warning-border:          var(--color-base-20);
+  --error-bg:                var(--color-base-60);
+  --error-text:              var(--color-base-40);
+  --error-border:            var(--color-base-50);
 
   /* Structural (for subtle outlines, shadows, etc) */
   --structural:              #1B3240;
