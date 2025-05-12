@@ -492,6 +492,11 @@ body {
   /* Sidebar gradient (desktop & mobile) */
   --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
 
+  /* background-modifier-border */
+  --background-modifier-border: var(--color-base-20); /* #8DA6A6; */
+  /*--background-modifier-hover: var(--color-base-25);  #D9AE30; */
+  --background-modifier-box-shadow: var(--color-base-30); /* #313D40; */
+
   /* color bases for light theme */
   --color-base-00: #F2C6B6;   /* main background, warm peach */
   --color-base-05: #F2E9D8;   /* card/panel background, lighter peach */
