@@ -596,24 +596,25 @@ body.is-mobile.theme-light {
   
 
   /* Text colors light */
-  --text-normal: var(--color-base-30);
-  --text-accent: var(--color-base-26);
-  --text-muted: var(--color-base-40);
-  --text-faint: var(--color-base-22);
+	--text-normal: var(--color-base-30);
+	--text-accent: var(--color-base-26);
+	--text-muted: var(--color-base-40);
+	--text-faint: var(--color-base-22);
   
   /* Nav/file list colors light */
-  --nav-item-color: var(--color-base-30); 
+	--nav-item-color: var(--color-base-30); 
 
-  --dropdown-background: var(--background-primary-alt);
+	--dropdown-background: var(--background-primary-alt);
   
 }
 
 /* Mobile light theme: apply gradient background to all relevant containers */
-body.is-mobile.theme-dark .nav-files-container,
-body.is-mobile.theme-dark .workspace-leaf-content,
-body.is-mobile.theme-dark .workspace-tab-container {
+body.is-mobile.theme-light .nav-files-container,
+body.is-mobile.theme-light .workspace-leaf-content,
+body.is-mobile.theme-light .workspace-tab-container {
 	background: var(--sidebar-gradient);
-	
+}
+
 
 /* ---- Coruscant Evening (dark) ---- */
 
