@@ -487,10 +487,10 @@ body {
   --background-secondary-alt: var(--color-base-10); /* #F2B47E; soft gold, for highlights/selection */
 
   /* Main workspace gradient */
-  --background-gradient: linear-gradient(135deg, #8DA6A6 0%, #F2C6B6 100%);
+  --background-gradient: linear-gradient(135deg,  #F2C6B6 0%, #8DA6A6 100%);
 
   /* Sidebar gradient (desktop & mobile) */
-  --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
+  --sidebar-gradient: linear-gradient(to top,  #F2C6B6 0%, #8DA6A6 100%);
 
   /* background-modifier-border */
   --background-modifier-border: var(--color-base-22); /* 20 // #8DA6A6; */
