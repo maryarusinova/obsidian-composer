@@ -565,21 +565,6 @@ body {
 /* --------------------- MOBILE LIGHT THEME --------------------- */
 
 body.is-mobile.theme-light {
-	--color-base-00: #F2C6B6;
-	--color-base-05: #F2E9D8;
-	--color-base-10: #F2B47E;
-	--color-base-20: #8DA6A6;
-	--color-base-22: #6C8B8B;
-	--color-base-23: #F2A285;
-	--color-base-25: #D9AE30;	
-	--color-base-26: #A67D03;
-	--color-base-30: #313D40;
-	--color-base-35: #AFCAC6;
-	--color-base-40: #593325;
-	--color-base-50: #F2845C;
-	--color-base-60: #F2B47E;
-	--color-base-70: #F2E9D8;
-	--color-base-100: #1B3240;
 	
 	/* Theme colors light */
 	--background-primary: var(--color-base-00);
