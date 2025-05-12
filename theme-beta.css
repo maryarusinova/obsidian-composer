@@ -528,7 +528,7 @@ body {
   --text-normal:             var(--color-base-30); /* #313D40; */
   --text-accent:             var(--color-base-26); /* was 26 - #D9AE30; */
   --text-muted:              var(--color-base-40); /* #593325; */
-  --text-faint:              var(--color-base-35); /* #8DA6A6; */
+  --text-faint:              var(--color-base-22); /* was 35 - #8DA6A6; */
 
   /* Headings */
   --h1-color:                var(--color-base-40); /* #593325; */
