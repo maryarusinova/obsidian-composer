@@ -484,7 +484,7 @@ body {
   --background-primary:      var(--color-base-00); /* #F2C6B6; warm peach, main workspace bg */
   --background-primary-alt:  var(--color-base-05); /* #F2E9D8; lighter, for cards/panels/modals */
   --background-secondary:    var(--color-base-20); /* #8DA6A6; muted teal, sidebar/nav, gradient stop */
-  --background-secondary-alt:var(--color-base-10); /* #F2B47E; soft gold, for highlights/selection */
+  --background-secondary-alt: var(--color-base-10); /* #F2B47E; soft gold, for highlights/selection */
 
   /* Main workspace gradient */
   --background-gradient: linear-gradient(135deg, #8DA6A6 0%, #F2C6B6 100%);
@@ -493,16 +493,18 @@ body {
   --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
 
   /* background-modifier-border */
-  --background-modifier-border: #F2A285; /* 20 // #8DA6A6; */
+  --background-modifier-border: var(--color-base-22); /* 20 // #8DA6A6; */
   /*--background-modifier-hover: var(--color-base-25);  #D9AE30; */
-  --background-modifier-box-shadow: #F2A285; /* 30 // #313D40; */
+  --background-modifier-box-shadow: var(--color-base-22); /* 30 // #313D40; */
 
   /* color bases for light theme */
   --color-base-00: #F2C6B6;   /* main background, warm peach */
   --color-base-05: #F2E9D8;   /* card/panel background, lighter peach */
   --color-base-10: #F2B47E;   /* soft gold, highlight, button */
   --color-base-20: #8DA6A6;   /* muted teal, sidebar/nav, accent */
-  --color-base-25: #D9AE30;   /* gold accent, links, borders */
+  --color-base-22: #6C8B8B;   /* muted teal, sidebar/nav, accent */
+  --color-base-23: #F2A285;   /* peach-orange, accent */
+  --color-base-25: #D9AE30;   /* og: #D9AE30; gold accent, links, borders */
   --color-base-30: #313D40;   /* deep blue-gray, primary text */
   --color-base-35: #AFCAC6;   /* lighter teal, gradient stop */
   --color-base-40: #593325;   /* deep brown, secondary text */
