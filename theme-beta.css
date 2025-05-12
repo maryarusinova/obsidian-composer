@@ -495,7 +495,7 @@ body {
   /* background-modifier-border */
   --background-modifier-border: #F2A285; /* 20 // #8DA6A6; */
   /*--background-modifier-hover: var(--color-base-25);  #D9AE30; */
-  --background-modifier-box-shadow: var(--color-base-60); /* 30 // #313D40; */
+  --background-modifier-box-shadow: #F2A285; /* 30 // #313D40; */
 
   /* color bases for light theme */
   --color-base-00: #F2C6B6;   /* main background, warm peach */
