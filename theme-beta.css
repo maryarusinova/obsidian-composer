@@ -1036,7 +1036,8 @@ body:not(.may4th--HideStripedTableBackground) {
 }
 
 body:not(.is-mobile) .workspace-ribbon.mod-left {
-	background-color: var(--mod-left-ribbon-background);
+	background: var(--sidebar-gradient, linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%));
+	background-color: #8DA6A6;
 	margin-top: 0px;
 	padding-top: var(--header-height);
 	padding-right: 4px;
@@ -1192,14 +1193,14 @@ body:not(.is-mobile)
 
 /* tab for all area */
 body:not(.is-mobile) .workspace {
-	background-color: var(--background-secondary);
 	background: var(--background-gradient);
+	color: var(--text-normal);
 }
 
 /* Make sure this is present and applies to all: */
 body .workspace {
-	background-color: var(--background-secondary);
 	background: var(--background-gradient);
+	color: var(--text-normal);
 }
 
 .workspace-tabs .workspace-leaf {
@@ -1632,13 +1633,10 @@ body.may4th--EnableHiddenFileTag.may4th--EnableHiddenFileTagHover
 
 /* property */
 .metadata-container {
-	background-color: var(--background-primary-alt); /* or another palette color */
-	border-radius: 8px;
-	border: 1px solid var(--background-modifier-border);
-	box-shadow: 0 1px 4px rgba(0,0,0,0.06); /* optional */
-	padding: 0.25em 0.75em;
+	background: var(--card-bg);
 	color: var(--text-normal);
-	margin-block-end: 0rem; /* remove default margin -- this is a hack from og */
+	border: 1px solid var(--border-color);
+	box-shadow: 0 2px 8px 0 var(--shadow-color);
 }
 
 .metadata-container + .cm-contentContainer > div > .cm-line:first-child {
