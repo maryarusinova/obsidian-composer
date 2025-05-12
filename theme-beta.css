@@ -508,50 +508,50 @@ body {
   
 
   /* Cards, modals, panels */
-  --card-bg:                 #F2E9D8;
-  --modal-bg:                #F2E9D8;
+  --card-bg:                 var(--color-base-05); /* #F2E9D8; */
+  --modal-bg:                var(--color-base-05); /* #F2E9D8; */
 
   /* Borders & shadows */
-  --border-color:            #F2B47E;
+  --border-color:            var(--color-base-10); /* #F2B47E; */
   --border-structural:       rgba(27,50,64,0.08);
   --shadow-color:            rgba(27,50,64,0.10);
 
   /* Text */
-  --text-normal:             #313D40;
-  --text-accent:             #D9AE30;
-  --text-muted:              #593325;
-  --text-faint:              #8DA6A6;
+  --text-normal:             var(--color-base-30); /* #313D40; */
+  --text-accent:             var(--color-base-25); /* #D9AE30; */
+  --text-muted:              var(--color-base-40); /* #593325; */
+  --text-faint:              var(--color-base-35); /* #8DA6A6; */
 
   /* Headings */
-  --h1-color:                #593325;
-  --h2-color:                #D9AE30;
-  --h3-color:                #8DA6A6;
+  --h1-color:                var(--color-base-40); /* #593325; */
+  --h2-color:                var(--color-base-25); /* #D9AE30; */
+  --h3-color:                var(--color-base-35); /* #8DA6A6; */
 
   /* Links */
-  --link-color:              #D9AE30;
-  --link-hover:              #8DA6A6;
+  --link-color:              var(--color-base-25); /* #D9AE30; */
+  --link-hover:              var(--color-base-35); /* #8DA6A6; */
 
   /* Buttons */
-  --button-bg:               #F2B47E;
-  --button-bg-hover:         #F2B47E;
+  --button-bg:               var(--color-base-10); /* #F2B47E; */
+  --button-bg-hover:         var(--color-base-10); /* #F2B47E; */
   --button-shadow:           0 2px 8px 0 rgba(141,166,166,0.12);
-  --button-text:             #313D40;
+  --button-text:             var(--color-base-30); /* #313D40; */
 
   /* Selection & highlights */
-  --selection-bg:            #F2C6B6;
-  --highlight-bg:            #F2B47E;
-  --highlight-text:          #313D40;
+  --selection-bg:            var(--color-base-00); /* #F2C6B6; */
+  --highlight-bg:            var(--color-base-10); /* #F2B47E; */
+  --highlight-text:          var(--color-base-30); /* #313D40; */
 
   /* Warnings & errors */
-  --warning-bg:              #F2B47E;
-  --warning-text:            #593325;
-  --warning-border:          #D9AE30;
-  --error-bg:                #F2845C;
-  --error-text:              #593325;
-  --error-border:            #F26B5E;
+  --warning-bg:              var(--color-base-10); /* #F2B47E; */
+  --warning-text:            var(--color-base-40); /* #593325; */
+  --warning-border:          var(--color-base-25); /* #D9AE30; */
+  --error-bg:                var(--color-base-50); /* #F2845C; */
+  --error-text:              var(--color-base-40); /* #593325; */
+  --error-border:            var(--color-base-50); /* #F26B5E; */
 
   /* Structural (for subtle outlines, shadows, etc) */
-  --structural:              #1B3240;
+  --structural:              var(--color-base-100); /* #1B3240; */
 }
 
 /* ---- Coruscant Evening (dark) ---- */
