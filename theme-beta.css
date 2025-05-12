@@ -487,7 +487,7 @@ body {
   --background-secondary-alt: var(--color-base-10); /* #F2B47E; soft gold, for highlights/selection */
 
   /* Main workspace gradient */
-  --background-gradient: linear-gradient(135deg,  #F2C6B6 0%, #8DA6A6 100%);
+  --background-gradient: linear-gradient(to bottom,  #F2C6B6 0%, #8DA6A6 100%); /* 135deg */
 
   /* Sidebar gradient (desktop & mobile) */
   --sidebar-gradient: linear-gradient(to bottom,  #F2C6B6 0%, #8DA6A6 100%);
