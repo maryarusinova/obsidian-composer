@@ -493,7 +493,7 @@ body {
   --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
 
   /* background-modifier-border */
-  --background-modifier-border: var(--color-base-60); /* 20 // #8DA6A6; */
+  --background-modifier-border: #F2A285; /* 20 // #8DA6A6; */
   /*--background-modifier-hover: var(--color-base-25);  #D9AE30; */
   --background-modifier-box-shadow: var(--color-base-60); /* 30 // #313D40; */
 
