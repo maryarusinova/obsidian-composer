@@ -562,16 +562,58 @@ body {
   --structural:              var(--color-base-100); /* #1B3240; */
 }
 
-/* ---- Coruscant Morning (light) MOBILE ---- */
+/* --------------------- MOBILE LIGHT THEME --------------------- */
 
 body.is-mobile.theme-light {
+	--color-base-00: #F2C6B6;
+	--color-base-05: #F2E9D8;
+	--color-base-10: #F2B47E;
+	--color-base-20: #8DA6A6;
+	--color-base-22: #6C8B8B;
+	--color-base-23: #F2A285;
+	--color-base-25: #D9AE30;	
+	--color-base-26: #A67D03;
+	--color-base-30: #313D40;
+	--color-base-35: #AFCAC6;
+	--color-base-40: #593325;
+	--color-base-50: #F2845C;
+	--color-base-60: #F2B47E;
+	--color-base-70: #F2E9D8;
+	--color-base-100: #1B3240;
+	
+	/* Theme colors light */
+	--background-primary: var(--color-base-00);
+	--background-primary-alt: var(--color-base-05);
+	--background-secondary: var(--color-base-20);
+	--background-secondary-alt: var(--color-base-10);
+	
+	
 	/* Workspace background gradient */
 	--background-gradient: linear-gradient(to bottom, #F2C6B6 0%, #8DA6A6 100%);
   
 	/* Sidebar gradient */
 	--sidebar-gradient: linear-gradient(to bottom, #F2C6B6 0%, #8DA6A6 100%);
-  }
   
+
+  /* Text colors light */
+  --text-normal: var(--color-base-30);
+  --text-accent: var(--color-base-26);
+  --text-muted: var(--color-base-40);
+  --text-faint: var(--color-base-22);
+  
+  /* Nav/file list colors light */
+  --nav-item-color: var(--color-base-30); 
+
+  --dropdown-background: var(--background-primary-alt);
+  
+}
+
+/* Mobile light theme: apply gradient background to all relevant containers */
+body.is-mobile.theme-dark .nav-files-container,
+body.is-mobile.theme-dark .workspace-leaf-content,
+body.is-mobile.theme-dark .workspace-tab-container {
+	background: var(--sidebar-gradient);
+	
 
 /* ---- Coruscant Evening (dark) ---- */
 
