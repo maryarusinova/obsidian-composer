@@ -504,7 +504,8 @@ body {
   --color-base-20: #8DA6A6;   /* muted teal, sidebar/nav, accent */
   --color-base-22: #6C8B8B;   /* muted teal, sidebar/nav, accent */
   --color-base-23: #F2A285;   /* peach-orange, accent */
-  --color-base-25: #D9AE30;   /* og: #D9AE30; gold accent, links, borders */
+  --color-base-25: #D9AE30; /* og: #D9AE30; gold accent, links, borders */
+  --color-base-26: #A67D03;  /* darker gold accent */
   --color-base-30: #313D40;   /* deep blue-gray, primary text */
   --color-base-35: #AFCAC6;   /* lighter teal, gradient stop */
   --color-base-40: #593325;   /* deep brown, secondary text */
@@ -525,7 +526,7 @@ body {
 
   /* Text */
   --text-normal:             var(--color-base-30); /* #313D40; */
-  --text-accent:             var(--color-base-25); /* #D9AE30; */
+  --text-accent:             var(--color-base-26); /* was 26 - #D9AE30; */
   --text-muted:              var(--color-base-40); /* #593325; */
   --text-faint:              var(--color-base-35); /* #8DA6A6; */
 
@@ -535,7 +536,7 @@ body {
   --h3-color:                var(--color-base-35); /* #8DA6A6; */
 
   /* Links */
-  --link-color:              var(--color-base-25); /* #D9AE30; */
+  --link-color:              var(--color-base-26); /* was 25 - #D9AE30; */
   --link-hover:              var(--color-base-35); /* #8DA6A6; */
 
   /* Buttons */
