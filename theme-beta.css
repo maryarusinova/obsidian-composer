@@ -497,8 +497,8 @@ body {
 
   /* Borders & shadows */
   --border-color:            #F2B47E;
-  --border-structural:       rgba(27,50,64,0.08);
-  --shadow-color:            rgba(27,50,64,0.10);
+  --border-structural:       rgba(27,50,64,0.18);
+  --shadow-color:            rgba(27,50,64,0.24);
 
   /* Text */
   --text-normal:             #313D40;
