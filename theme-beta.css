@@ -478,6 +478,7 @@ body {
 } */
 
 /* ---- Coruscant Morning (light) ---- */
+
 .theme-light {
   /* Main backgrounds */
   --background-primary:      #F2C6B6; /* warm peach, main workspace bg */
@@ -490,6 +491,21 @@ body {
 
   /* Sidebar gradient (desktop & mobile) */
   --sidebar-gradient: linear-gradient(to top, #8DA6A6 0%, #F2C6B6 100%);
+
+  /* color bases for light theme */
+  --color-base-00: #F2C6B6;   /* main background, warm peach */
+  --color-base-05: #F2E9D8;   /* card/panel background, lighter peach */
+  --color-base-10: #F2B47E;   /* soft gold, highlight, button */
+  --color-base-20: #8DA6A6;   /* muted teal, sidebar/nav, accent */
+  --color-base-25: #D9AE30;   /* gold accent, links, borders */
+  --color-base-30: #313D40;   /* deep blue-gray, primary text */
+  --color-base-35: #AFCAC6;   /* lighter teal, gradient stop */
+  --color-base-40: #593325;   /* deep brown, secondary text */
+  --color-base-50: #F2845C;   /* soft coral, error */
+  --color-base-60: #F2B47E;   /* highlight, warning, selection */
+  --color-base-70: #F2E9D8;   /* very light peach, highlight/alt */
+  --color-base-100: #1B3240;  /* structural, shadow, strong contrast */
+  
 
   /* Cards, modals, panels */
   --card-bg:                 #F2E9D8;
@@ -538,7 +554,7 @@ body {
   --structural:              #1B3240;
 }
 
-/* ---- Coruscant (dark) ---- */
+/* ---- Coruscant Evening (dark) ---- */
 
 .theme-dark {
 	--text-normal: var(--color-base-00);   /* very light gray, main text */
